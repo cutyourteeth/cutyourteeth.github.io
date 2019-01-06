@@ -12,7 +12,7 @@
         <router-link to="/projects">作品</router-link>
       </div>
     </div>
-    <router-view class="port"></router-view>div.
+    <router-view class="port"></router-view>
     <v-contact class="contact"></v-contact>
   </div>
 </template>
@@ -21,15 +21,19 @@
 import Portfolio from '../Portfolio/Portfolio'
 import Contact from '../Contact/Contact'
 export default {
-  name: 'welcome',
+  props: {
+  },
   data () {
     return {
     }
   },
   methods: {
   },
-  mounted: {
-  },
+  // mounted: {
+  //   animationStart () {
+  //     Portfolio.name.value = '1111'
+  //   }
+  // },
   components: {
     'v-portfolio': Portfolio,
     'v-contact': Contact
@@ -47,13 +51,14 @@ export default {
   position: relative;
   width: 80%;
   min-width: 300px;
-  box-sizing:border-box;
+  max-width: 810px;
+  box-sizing: border-box;
   background-color: #fff;
   margin: 50px auto;
-  padding: 50px 10px;
+  padding: 50px 0;
   background-color: rgba(15, 15, 15, 0.9);
   border-radius: 12px;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 
   .tab {
     display: flex;
@@ -75,36 +80,44 @@ export default {
         display: block;
         height: 100%;
         color: black;
-        font-size: 14px;
         text-align: center;
         smooth-top-angle(10px);
         padding-top: 20px;
         box-sizing: border-box;
         color: white;
-        // background-color: $subOrange;
-        background-color: $lightGreen;
+        background-color: $subOrange;
+        // background-color: $lightGreen;
+        // background-color #000
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: center;
-
-        &.router-link-active {
-          background-color: rgba(255, 255, 255, 1);
-          color: black;
-          transition: background-color 0.5s, color 0.5s;
-          roll-over(1s);
-        }
       }
 
       &:nth-child(1) > a {
-        bg-image('education');
+        bg-image('education_w');
+        background-color: $subOrange;
+
+        &.router-link-active {
+          bg-shift('education', 1s);
+        }
       }
 
       &:nth-child(2) > a {
-        bg-image('skills');
+        bg-image('skills_w');
+        background-color: $lightGreen;
+
+        &.router-link-active {
+          bg-shift('skills', 1s);
+        }
       }
 
       &:nth-child(3) > a {
-        bg-image('projects');
+        bg-image('projects_w');
+        background-color: $lightPink;
+
+        &.router-link-active {
+          bg-shift('projects', 1s);
+        }
       }
     }
   }
@@ -112,11 +125,13 @@ export default {
   .port {
     display: block;
     position: relative;
+    box-sizing: border-box;
     flex: 1;
-    width: 80%;
-    min-width: 200px;
+    width: 90%;
+    min-width: 270px;
     min-height: 200px;
-    padding: 20px 20px  50px 20px;
+    border: none;
+    padding: 20px 20px 50px 20px;
     margin: 0 auto;
     border-radius: 10px;
     font-size: 20px;

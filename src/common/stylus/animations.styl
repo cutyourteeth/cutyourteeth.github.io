@@ -30,6 +30,18 @@
   }
 }
 
+@keyframes come-in {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
 roll-over($time) {
   // name duraiton timing-function delay iteration-count direction fill-mode
   animation: roll-over;
@@ -42,6 +54,14 @@ roll-over($time) {
 run-over($time) {
   // name duraiton timing-function delay iteration-count direction fill-mode
   animation: run-over;
+  animation-delay: 0;
+  animation-duration: $time;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+come-in($time) {
+  animation: come-in;
   animation-delay: 0;
   animation-duration: $time;
   animation-iteration-count: 1;

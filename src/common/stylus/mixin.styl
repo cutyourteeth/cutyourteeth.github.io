@@ -2,6 +2,14 @@ bg-image($url) {
   background-image: url('../../assets/image/' + $url + '.png');
 }
 
+bg-shift($url, $time) {
+  transition: background-image $time, background-color 0.5s, color 0.5s;
+  bg-image($url);
+  color: black;
+  roll-over(1s);
+  background-color: #fff;
+}
+
 smooth-top-angle($deg) {
   border-top-left-radius: $deg;
   border-top-right-radius: $deg;
@@ -9,3 +17,4 @@ smooth-top-angle($deg) {
 
 $subOrange = rgba(255, 152, 0, 1);
 $lightGreen = rgba(52, 214, 164, 1);
+$lightPink = rgba(245, 95, 171, 1);
