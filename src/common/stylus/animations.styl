@@ -1,0 +1,49 @@
+@keyframes roll-over {
+  0% {
+    top: 0;
+    height: 70px;
+    background-position: center 50%;
+  }
+
+  50% {
+    top: -10px;
+    height: 80px;
+    background-position: center 40%;
+  }
+
+  100% {
+    top: 0;
+    height: 70px;
+    background-position: center 50%;
+  }
+}
+
+@keyframes run-over {
+  0% {
+    top: 30px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+roll-over($time) {
+  // name duraiton timing-function delay iteration-count direction fill-mode
+  animation: roll-over;
+  animation-delay: 0;
+  animation-duration: $time;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+run-over($time) {
+  // name duraiton timing-function delay iteration-count direction fill-mode
+  animation: run-over;
+  animation-delay: 0;
+  animation-duration: $time;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
