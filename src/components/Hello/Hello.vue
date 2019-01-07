@@ -13,30 +13,52 @@
       </div>
     </div>
     <router-view class="port"></router-view>
-    <v-contact class="contact"></v-contact>
+    <div class="contact">
+      <a class="icon-home" @click="triggler=1"></a>
+      <a class="icon-phone" @click="triggler=2"></a>
+      <a class="icon-envelop" @click="triggler=3"></a>
+      <a class="icon-earth" @click="triggler=4"></a>
+      <a class="icon-bubbles3" @click="triggler=5"></a>
+    </div>
+    <v-contacts :triggler="triggler"></v-contacts>
   </div>
 </template>
 
 <script>
 import Portfolio from '../Portfolio/Portfolio'
-import Contact from '../Contact/Contact'
+import Contacts from '../Contacts/Contacts'
+
 export default {
   props: {
   },
   data () {
     return {
+      'triggler': 0,
+      'color': {
+        'subOrange': 'rgba(255, 152, 0, 1)',
+        'lightGreen': 'rgba(52, 214, 164, 1)',
+        'lightPink': 'rgba(245, 95, 171, 1)'
+      }
     }
   },
   methods: {
+
+    changeColor (e) {
+      let ele = e.currentTarget
+      console.log(ele.style)
+      if (ele) {
+        let setter = Math.floor(Math.random * 3 * 2) / 2
+        switch (setter) {
+          case 0: ele.style.backgroundColor = this.color.subOrange; break
+          case 1: ele.style.backgroundColor = this.color.lightGreen; break
+          case 2: ele.style.backgroundColor = this.color.lightPink; break
+        }
+      }
+    }
   },
-  // mounted: {
-  //   animationStart () {
-  //     Portfolio.name.value = '1111'
-  //   }
-  // },
   components: {
     'v-portfolio': Portfolio,
-    'v-contact': Contact
+    'v-contacts': Contacts
   }
 }
 </script>
@@ -125,16 +147,12 @@ export default {
   .port {
     display: block;
     position: relative;
-    box-sizing: border-box;
     flex: 1;
-    width: 90%;
-    min-width: 270px;
-    min-height: 200px;
+    width-content(90%, 0, 50px);
     border: none;
-    padding: 20px 20px 50px 20px;
-    margin: 0 auto;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 22px;
     background-color: rgba(255, 255, 255, 1);
 
     & > * {
@@ -145,7 +163,25 @@ export default {
   }
 
   .contact {
+    display: block;
     flex: 0;
+    margin-top: 48px;
+    text-align: center;
+
+    &>a {
+      display: inline-block;
+      color: white;
+      font-size: 24px;
+      letter-spacing: 20px;
+
+      &:hover, &:active {
+        color: $lightGreen;
+      }
+
+      &:last-child {
+        letter-spacing: 0;
+      }
+    }
   }
 }
 </style>
