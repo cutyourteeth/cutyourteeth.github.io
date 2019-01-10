@@ -1,27 +1,31 @@
 <template>
   <div class="education">
-    <h1>教育经历</h1>
+    <h1 class="title">教育经历</h1>
     <hr>
-    <p>
-      喂，侬勒该啊里的啊？（你在哪啊？）
-      吾现在要去百乐门白相（我现在要去百乐门玩）
-      侬来伐啦（你来不来啊）想好了伐啦？（你想好了没啊～）
-      覅（不要）搞了好伐?
-      覅扣（看）好伐.
-      我昨天夜里做了一个梦，
-      梦到我一个人去百乐门玩
-      （民国时期上海著名的歌舞厅），
-      梦里面是晚上，人超级多，马路上车子也没地方停。
-      百乐门门口的小姑娘都穿件长旗袍，
-      长得都很漂亮哦~
-      进去里面还有爵士乐队，
-      跳舞场里全是人，热闹得不得了~
-      我一直在里面找你，就是找不到，急死我了！
-      最后只好跑出来给你打个电话，
-      通是通了，你就是爱理不理，
-      一句话也不说，不知道你在想什么东西！
-      我吃不准你到底什么意思，只好挂掉咯，气死我了！
-    </p>
+    <table class="table">
+      <tr class="table-row">
+        <td>
+          <span class="icon_2-book"></span>
+        </td>
+        <td class="text">
+          <p>
+          <span class="time">2009-2012</span>
+            <br>衢州一中
+          </p>
+        </td>
+      </tr>
+      <tr class="table-row">
+        <td>
+          <span class="icon_2-book"></span>
+        </td>
+        <td class="text">
+          <span class="time">2012-2016</span>
+          <br>浙江大学城市学院土木工程
+        </td>
+      </tr>
+    </table>
+
+    <p></p>
   </div>
 </template>
 
@@ -34,10 +38,39 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='stylus' scoped>
+@import '../../common/stylus/mixin';
 
-.education{
+.education {
+  display: block;
 
+  .title {
+    font-size: 18px;
+  }
+
+  .table {
+    .table-row {
+      display: flex;
+      align-items center
+      padding-bottom:20px
+      .time {
+        font-size 16px
+        letter-spacing 2px
+        font-weight bold}
+      .icon_2-book {
+        display: block;
+        font-size: 36px;
+        line-height: 36px;
+        margin-right: 16px;
+        color: $subOrange;
+      }
+
+      .text {
+        letter-spacing 2px
+        font-size 16px
+
+      }
+    }
+  }
 }
-
 </style>

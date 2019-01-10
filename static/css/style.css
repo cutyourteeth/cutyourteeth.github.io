@@ -45,3 +45,40 @@
 .icon-earth:before {
   content: "\e9ca";
 }
+
+
+@font-face {
+  font-family: 'icomoon_2';
+  src:  url('../../src/assets/fonts/icomoon_2/icomoon.eot?rijxt3');
+  src:  url('../../src/assets/fonts/icomoon_2/icomoon.eot?rijxt3#iefix') format('embedded-opentype'),
+    url('../../src/assets/fonts/icomoon_2/icomoon.ttf?rijxt3') format('truetype'),
+    url('../../src/assets/fonts/icomoon_2/icomoon.woff?rijxt3') format('woff'),
+    url('../../src/assets/fonts/icomoon_2/icomoon.svg?rijxt3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon_2-"], [class*=" icon_2-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon_2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_2-book:before {
+  content: "\e900";
+}
+.icon_2-flag:before {
+  content: "\e901";
+}
+.icon_2-github:before {
+  content: "\e902";
+}

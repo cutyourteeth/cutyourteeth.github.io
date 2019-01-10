@@ -1,3 +1,7 @@
+$subOrange = rgba(255, 152, 0, 1);
+$lightGreen = rgba(52, 214, 164, 1);
+$lightPink = rgba(245, 95, 171, 1);
+
 bg-image($url) {
   background-image: url('../../assets/image/' + $url + '.png');
 }
@@ -15,11 +19,7 @@ smooth-top-angle($deg) {
   border-top-right-radius: $deg;
 }
 
-$subOrange = rgba(255, 152, 0, 1);
-$lightGreen = rgba(52, 214, 164, 1);
-$lightPink = rgba(245, 95, 171, 1);
-
-width-content($width, $margin-vertical,$padding-bottom) {
+width-content($width, $margin-vertical, $padding-bottom) {
   width: $width;
   min-width: 270px;
   box-sizing: border-box;
