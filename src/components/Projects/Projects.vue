@@ -1,16 +1,16 @@
 <template>
   <div class="projects">
-    <h1 class="title">项目</h1>
+    <h1 class="title">举几个栗子</h1>
     <hr>
     <div class="content-wrapper">
       <h2>日记webapp</h2>
       <p>
         预览:
-        <a href="https://cutyourteeth.github.io/diary/index.html" class="icon_2-github"></a>
+        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html" class="icon_2-github"></a>
       </p>
       <p>
         源码:
-        <a href="https://cutyourteeth.github.io/diary/" class="icon_2-github"></a>
+        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html" class="icon_2-github"></a>
       </p>
       <p class="description">
         简介:由原生Javascript编写开发，结合IndexedDB数据库实现本地存储。
@@ -26,13 +26,13 @@
       <h2>饿了么webapp</h2>
       <p>
         预览:
-        <a href="https://cutyourteeth.github.io/ele-webapp/dist">
+        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
           <span class="icon_2-github"></span>
         </a>
       </p>
       <p>
         源码:
-        <a href="https://cutyourteeth.github.io/ele-webapp/">
+        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
           <span class="icon_2-github"></span>
         </a>
       </p>
@@ -46,13 +46,13 @@
       <h2>DJ&Sets 宣传web</h2>
       <p>
         预览:
-        <a href="https://cutyourteeth.github.io/DJ&amp;Sets/dist">
+        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
           <span class="icon_2-github"></span>
         </a>
       </p>
       <p>
         源码:
-        <a href="https://cutyourteeth.github.io/DJ&amp;Sets/">
+        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
           <span class="icon_2-github"></span>
         </a>
       </p>
