@@ -44,7 +44,6 @@ export default {
 .portfolio {
   display: flex;
   flex-direction: column;
-  // background-color: #fff;
   text-align: center;
   color: #fff;
   padding: 10px 20px;
@@ -99,6 +98,8 @@ export default {
     font-size: 16px;
     line-height: 22px;
     run-over(0.5s);
+    text-indent: 2em;
+
   }
 }
 </style>
