@@ -1,25 +1,63 @@
 <template>
   <div class="projects">
-    <h1>完成的项目</h1>
+    <h1 class="title">项目</h1>
     <hr>
-    <p>
-      我就是要赢过自以为是的你 嗯哼
-      我的迈凯伦P1都比你去教堂穿的正装干净
-      这车值一百二十万呢 你是否觉得伤不起
-      买下那红色兰博就是想嘲笑一下你
-      这些东西我可随意轻松买下 如同玩具
-      一周花销就是你一年所得 你是否满意
-      我亲爱的已不愿与你为伍
-      任何女人都不愿与你有任何关系
-      这空空的房 可能需要添些装饰摆设
-      比如二十个架子一张桌 乌木材质精心雕刻
-      将象牙(可卡因)弄成细碎粉粒
-      然后趴在桌上吸个干净 (噢这别提多爽了宝贝
-      你谈钱的时候 我就假装没听清
-      你要谈论我 也不会伤到我半厘
-      给我闪一边 你知道好狗不挡道
-      你知道我就是人见人爱的星光男孩儿
-    </p>
+    <div class="content-wrapper">
+      <h2>日记webapp</h2>
+      <p>
+        预览:
+        <a href="cutyourteeth.github.io/diary/index.html" class="icon_2-github"></a>
+      </p>
+      <p>
+        源码:
+        <a href="cutyourteeth.github.io/diary/" class="icon_2-github"></a>
+      </p>
+      <p class="description">
+        简介:由原生Javascript编写开发，结合IndexedDB数据库实现本地存储。
+        自写并实现了数据库的写入、输出，modal框体，背景轮播，动画，图片添加，日记分类，筛选
+        完善界面布局，如根据图片数量展示不同的展示框体；
+        学习并模仿了canvas气泡背景，
+        以及最后自制了一个算数小游戏；
+      </p>
+      <p class="danger">注意:各移动端浏览器对indexedDB支持不一,可能无法在手机上正常运作,请使用PC端</p>
+    </div>
+
+    <div class="content-wrapper">
+      <h2>饿了么webapp</h2>
+      <p>
+        预览:
+        <a href="cutyourteeth.github.io/eleme/dist">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p>
+        源码:
+        <a href="cutyourteeth.github.io/eleme/">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="description">
+        简介: 这是我学习vue2.5以来跟做的一个vue项目，完成了各个部件，由vueresource完成ajax数据请求，vue-router来引导每个版块，
+        基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载、分类，商家信息，评分)
+      </p>
+    </div>
+
+    <div class="content-wrapper">
+      <h2>DJ&Sets 宣传web</h2>
+      <p>
+        预览:
+        <a href="cutyourteeth.github.io/DJ&amp;Sets/dist">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p>
+        源码:
+        <a href="cutyourteeth.github.io/DJ&amp;Sets/">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="description">简介:使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web,实现响应式交互界面.</p>
+    </div>
   </div>
 </template>
 
@@ -32,7 +70,27 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+@import '../../common/stylus/mixin';
+
 .projects {
+  .icon_2-github {
+    color: $lightPink;
+    font-size: 20px;
+
+    &:hover, &:active {
+      color: $subOrange;
+    }
+  }
+
+  .content-wrapper {
+    font-size 16px;
+    margin-bottom: 20px;
+
+    .description {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
 }
 </style>

@@ -9,9 +9,16 @@ bg-image($url) {
 bg-shift($url, $time) {
   transition: background-image $time, background-color 0.5s, color 0.5s;
   bg-image($url);
-  color: black;
   roll-over(1s);
+  color: black;
   background-color: #fff;
+  
+}
+
+content-after($text) {
+  position: relative;
+  top: 52px
+  content: $text;
 }
 
 smooth-top-angle($deg) {

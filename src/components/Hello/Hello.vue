@@ -3,13 +3,13 @@
     <v-portfolio></v-portfolio>
     <div class="tab">
       <div class="tab-item education icon">
-        <router-link to="/education">学历</router-link>
+        <router-link to="/education"></router-link>
       </div>
       <div class="tab-item skills icon">
-        <router-link to="/skills">技能</router-link>
+        <router-link to="/skills"></router-link>
       </div>
       <div class="tab-item projects icon">
-        <router-link to="/projects">作品</router-link>
+        <router-link to="/projects"></router-link>
       </div>
     </div>
     <router-view class="port"></router-view>
@@ -85,39 +85,51 @@ export default {
   .tab {
     display: flex;
     width: 50%;
-    height: 70px;
-    min-width: 250px;
+    min-width: 200px;
     max-width: 400px;
-    line-height: 75px;
     margin: 20px auto 0 auto;
 
     .tab-item {
       position: relative;
-      width: 33.3%;
       height: 70px;
+      width: 33.3%;
       flex: 1;
 
-      & > a {
+      @media screen and (max-width: 500px) {
+        width: 50px;
+        height: 50px;
+      }
+
+      &>a {
         position: relative;
         display: block;
         height: 100%;
         color: black;
         text-align: center;
         smooth-top-angle(10px);
-        padding-top: 20px;
         box-sizing: border-box;
         color: white;
         background-color: $subOrange;
-        // background-color: $lightGreen;
-        // background-color #000
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: center;
+
+        @media screen and (max-width: 500px) {
+          height 50px
+        }
       }
 
       &:nth-child(1) > a {
         bg-image('education_w');
         background-color: $subOrange;
+
+        &:after {
+          content-after('经历');
+
+          @media screen and (max-width: 500px) {
+            content: '';
+          }
+        }
 
         &.router-link-active {
           bg-shift('education', 1s);
@@ -131,6 +143,14 @@ export default {
         &.router-link-active {
           bg-shift('skills', 1s);
         }
+
+        &:after {
+          content-after('技能');
+
+          @media screen and (max-width: 500px) {
+            content: '';
+          }
+        }
       }
 
       &:nth-child(3) > a {
@@ -139,6 +159,14 @@ export default {
 
         &.router-link-active {
           bg-shift('projects', 1s);
+        }
+
+        &:after {
+          content-after('作品');
+
+          @media screen and (max-width: 500px) {
+            content: '';
+          }
         }
       }
     }
@@ -157,8 +185,11 @@ export default {
 
     & > * {
       position: relative;
-      top: 50px;
       run-over(0.5s);
+    }
+
+    & >.title {
+      font-size: 18px;
     }
   }
 

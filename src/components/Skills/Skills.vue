@@ -2,30 +2,53 @@
   <div class="skills">
     <h1>技能</h1>
     <hr>
-    <canvas class="html"></canvas>
-    <canvas class="css"></canvas>
-    <canvas class="js"></canvas>
-    <canvas class="jQuery"></canvas>
-    <canvas class="bootstrap"></canvas>
-    <canvas class="vue"></canvas>
+    <canvas class="circle" ref="html"></canvas>
+    <canvas class="circle" ref="circle css"></canvas>
+    <canvas class="circle" ref="circle js"></canvas>
+    <canvas class="circle" ref="circle jQuery"></canvas>
+    <canvas class="circle" ref="circle bootstrap"></canvas>
+    <canvas class="circle" ref="circle vue"></canvas>
   </div>
 </template>
 
-<script lang='jquery'>
-import $ from 'jquery'
+<script>
 
 export default {
   data () {
     return {
     }
   },
-  computed: {
-    $('.html').innerTxert('?????')
+  mounted () {
+    this.circle()
+  },
+  methods: {
+    circle () {
+      let eles = document.getElementsByClassName('circle')
+      // let eles = this.$refs.html
+      console.log(eles)
+      for (let i = 0; i < eles.length; i++) {
+        let ele = eles[i]
+        let ctx = ele.getContent('2d')
+        // ctx.beginPath()
+        // ctx.fillStyle = 'black'
+        // ctx.arc(100, 75, 50, 0, 2 * Math.PI)
+        // ctx.stroke()
+        ctx.beginPath()
+        ctx.arc(200, 200, 80, 1.5 * Math.PI, Math.PI / 2, false)
+        ctx.fillStyle = 'white'
+        ctx.closePath()
+        ctx.fill()
+      }
+    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 .skills {
+  .circle {
+    width: 100px;
+    height: 75px;
+  }
 }
 </style>
