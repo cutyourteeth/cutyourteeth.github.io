@@ -53,7 +53,8 @@ export default {
     margin: 0 auto 20px auto;
     width: 100px;
     height: 100px;
-    bg-image('avatar');
+    // bg-image('avatar');
+    background-image: url('http://img0.ph.126.net/OjZbMJ6NCBw7tlDxCeX7MA==/6599320466960459256.png');
     background-size: 130px;
     background-position: center;
     border-radius: 50%;
@@ -96,7 +97,7 @@ export default {
     width-content(90%, 0, 0);
     text-align: center;
     font-size: 14px;
-    font-weight 500
+    font-weight: 500;
     line-height: 1.7;
     run-over(0.5s);
   }
