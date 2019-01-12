@@ -53,7 +53,7 @@ export default {
     margin: 0 auto 20px auto;
     width: 100px;
     height: 100px;
-    // bg-image('avatar');
+    bg-image('avatar');
     background-image: url('http://img0.ph.126.net/OjZbMJ6NCBw7tlDxCeX7MA==/6599320466960459256.png');
     background-size: 130px;
     background-position: center;
