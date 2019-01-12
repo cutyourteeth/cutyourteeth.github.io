@@ -94,12 +94,11 @@ export default {
   .intro {
     flex: 1;
     width-content(90%, 0, 0);
-    text-align: left;
-    font-size: 16px;
-    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+    font-weight 500
+    line-height: 1.7;
     run-over(0.5s);
-    text-indent: 2em;
-
   }
 }
 </style>

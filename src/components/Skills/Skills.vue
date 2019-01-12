@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <h1>自我打分</h1>
+    <h1 class="title">自我打分</h1>
     <hr>
     <div class="diagrams">
       <div class="diagram">
@@ -88,7 +88,7 @@ export default {
     progress (ele, percent) {
       let ctx = ele.getContext('2d')
       ctx.beginPath()
-      ctx.arc(160, 160, 160, 0, percent / 100 * 2 * Math.PI)
+      ctx.arc(160, 160, 160, 3 / 2 * Math.PI, (3 / 2 * Math.PI) + (percent / 100 * 2 * Math.PI))
       ctx.lineTo(160, 160)
       ctx.closePath()
       ctx.fillStyle = this.lightGreen

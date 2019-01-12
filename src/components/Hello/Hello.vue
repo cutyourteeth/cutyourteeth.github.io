@@ -115,7 +115,7 @@ export default {
         background-position: center;
 
         @media screen and (max-width: 500px) {
-          height 50px
+          height: 50px;
         }
       }
 
@@ -190,6 +190,8 @@ export default {
 
     & >.title {
       font-size: 18px;
+      font-weight: 500;
+      text-align: center;
     }
   }
 

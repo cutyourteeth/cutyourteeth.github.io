@@ -68,10 +68,6 @@ export default {
 .education {
   display: block;
 
-  .title {
-    font-size: 18px;
-  }
-
   .table {
     .table-row {
       display: flex;
@@ -84,7 +80,7 @@ export default {
         font-weight: bold;
       }
 
-      .icon_2-book,.icon_2-flag {
+      .icon_2-book, .icon_2-flag {
         display: block;
         font-size: 36px;
         line-height: 36px;
@@ -95,6 +91,8 @@ export default {
       .text {
         letter-spacing: 2px;
         font-size: 16px;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight 500
       }
     }
   }
