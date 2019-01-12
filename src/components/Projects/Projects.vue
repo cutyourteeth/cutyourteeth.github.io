@@ -26,13 +26,13 @@
       <h2>饿了么webapp</h2>
       <p>
         预览:
-        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
+        <a href="https://cutyourteeth.github.io/ele-webapp/dist/">
           <span class="icon_2-github"></span>
         </a>
       </p>
       <p>
         源码:
-        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
+        <a href="https://cutyourteeth.github.io/ele-webapp/">
           <span class="icon_2-github"></span>
         </a>
       </p>
@@ -43,7 +43,7 @@
     </div>
 
     <div class="content-wrapper">
-      <h2>DJ&Sets 宣传web</h2>
+      <h2>DJ&amp;Sets 宣传web</h2>
       <p>
         预览:
         <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
