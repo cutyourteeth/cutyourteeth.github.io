@@ -45,6 +45,20 @@
           {{handle.vue}}%
         </span>
       </div>
+      <div class="diagram">
+        <canvas class="circle" width="320" height="320" ref="photoshop"></canvas>
+        <span class="text">
+          <strong>Photoshop</strong>
+          {{handle.photoshop}}%
+        </span>
+      </div>
+      <div class="diagram">
+        <canvas class="circle" width="320" height="320" ref="premiere"></canvas>
+        <span class="text">
+          <strong>Premiere</strong>
+          {{handle.premiere}}%
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -57,10 +71,12 @@ export default {
       handle: {
         html: 85,
         css: 82,
-        javascript: 80,
-        jquery: 75,
+        javascript: 78,
+        jquery: 71,
         bootstrap: 70,
-        vue: 65
+        vue: 65,
+        photoshop: 76,
+        premiere: 60
       },
       lightGreen: 'rgba(52, 214, 164, 1)'
     }
@@ -72,6 +88,8 @@ export default {
     this.progress(this.$refs.jquery, this.handle.jquery)
     this.progress(this.$refs.bootstrap, this.handle.bootstrap)
     this.progress(this.$refs.vue, this.handle.vue)
+    this.progress(this.$refs.photoshop, this.handle.photoshop)
+    this.progress(this.$refs.premiere, this.handle.premiere)
     this.circle()
   },
   methods: {
