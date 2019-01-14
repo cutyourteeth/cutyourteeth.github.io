@@ -1,6 +1,6 @@
 <template>
   <div class="education">
-    <h1 class="title">教育、工作经历</h1>
+    <h1 class="title">教育经历</h1>
     <hr>
     <table class="table">
       <tr class="table-row">
