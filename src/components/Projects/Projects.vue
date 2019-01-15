@@ -44,6 +44,7 @@
         完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。
         基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载、分类，商家信息，评分)
       </p>
+      <p class="danger">注意：商品详情和商家信息还在重构中,显示不全敬请谅解。</p>
     </div>
 
     <div class="content-wrapper">
