@@ -51,13 +51,13 @@
       <h2>3.宣传web(DJ&amp;Sets)</h2>
       <p class="toView">
         预览：
-        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
+        <a href="https://cutyourteeth.github.io/first-git-sample/">
           <span class="icon_2-github"></span>
         </a>
       </p>
       <p class="toCode">
         源码：
-        <a href="https://cutyourteeth.github.io/tinyApps/404page/404.html">
+        <a href="https://github.com/cutyourteeth/first-git-sample">
           <span class="icon_2-github"></span>
         </a>
       </p>
