@@ -1,6 +1,7 @@
 <template>
   <div class="projects">
     <h1 class="title">举几个栗子</h1>
+    <p class="info">(this web built with Vue-cli &amp; Webpack &amp; Stylus)</p>
     <hr>
     <div class="content-wrapper">
       <h2>1.日记册(diarywebapp)</h2>
@@ -13,12 +14,13 @@
         <a href="https://github.com/cutyourteeth/diary/" class="icon_2-github"></a>
       </p>
       <p class="description">
-        简介：由原生Javascript编写开发，结合IndexedDB数据库实现本地存储，界面布局较完善。
-        1.数据库的写入、输出；
-        2.modal框体，modal动画；
-        3.toast提示窗体；
+        简介：由原生Javascript编写开发，未使用任何js库，stylus预编译css，结合IndexedDB数据库实现本地存储，界面布局较完善。
+        1.indexedDB数据库的写入、输出、筛选；
+        2.响应式布局，试用pc和移动端；
+        2.自制modal框体、动画、input样式等；
+        3.自制toast提示窗体；
         4.首页背景轮播；
-        5.图片添加，可多图添加，根据图片数量展示不同的展示框体；
+        5.添加本地图片，可多图添加，存入数据库，展示框体内的图片依据数量不同布局图片；
         6.日记分类，筛选。
         7.模仿了canvas气泡背景，以及自制了一个算数小游戏；
       </p>
@@ -82,6 +84,11 @@ export default {
 @import '../../common/stylus/mixin';
 
 .projects {
+  .info {
+    text-align: center;
+    color: $lightPink;
+  }
+
   .icon_2-github {
     color: $lightPink;
     font-size: 20px;
