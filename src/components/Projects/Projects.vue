@@ -42,11 +42,11 @@
         </a>
       </p>
       <p class="description">
-        简介：这是我学习vue2.5以来跟做的一个vue项目。
+        简介：开发工具Vue-cli &amp; Webpack &amp; Stylus 以及其他插件;
         完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。
         基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载、分类，商家信息，评分)
       </p>
-      <p class="danger">注意：商品详情和商家信息还在重构中,显示不全敬请谅解。</p>
+      <p class="danger">注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解。</p>
     </div>
 
     <div class="content-wrapper">
@@ -64,8 +64,7 @@
         </a>
       </p>
       <p class="description">
-        简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。
-        实现响应式交互界面。
+        简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。(占位)
       </p>
     </div>
   </div>
