@@ -14,7 +14,7 @@
         <a href="https://github.com/cutyourteeth/diary/" class="icon_2-github"></a>
       </p>
       <p class="description">
-        简介：由原生Javascript编写开发，未使用任何js库，stylus预编译css，结合IndexedDB数据库实现本地存储，界面布局较完善。
+        简介：原生Javascript开发，未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储，界面布局较完善。
         1.indexedDB数据库的写入、输出、筛选；
         2.响应式布局，试用pc和移动端；
         2.自制modal框体、动画、input样式等；
@@ -50,7 +50,27 @@
     </div>
 
     <div class="content-wrapper">
-      <h2>3.宣传web(DJ&amp;Sets)</h2>
+      <h2>3.计划表(tiny-todo-list)</h2>
+      <p class="toView">
+        预览：
+        <a href="https://cutyourteeth.github.io/tinyApps/todolist/dist/">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="toCode">
+        源码：
+        <a href="https://github.com/cutyourteeth/tinyApps/todolist">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="description">
+        简介：一个计划清单webapp。
+        使用了vue-cli、webpack、stylus，采用gird布局，储存方式为localStorage；
+      </p>
+    </div>
+
+    <div class="content-wrapper">
+      <h2>4.宣传web(DJ&amp;Sets)(占位)</h2>
       <p class="toView">
         预览：
         <a href="https://cutyourteeth.github.io/first-git-sample/">
@@ -64,7 +84,7 @@
         </a>
       </p>
       <p class="description">
-        简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。(占位)
+        简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。
       </p>
     </div>
   </div>
