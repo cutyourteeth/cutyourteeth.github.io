@@ -50,7 +50,24 @@
     </div>
 
     <div class="content-wrapper">
-      <h2>3.计划表(tiny-todo-list)</h2>
+      <h2>3.京东金融webapp(占位)</h2>
+      <p class="toView">
+        预览：
+        <a href="https://cutyourteeth.github.io/first-git-sample/">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="toCode">
+        源码：
+        <a href="https://github.com/cutyourteeth/first-git-sample">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="description">简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。(占位)</p>
+    </div>
+
+    <div class="content-wrapper">
+      <h2>4.计划表(tiny-todo-list)</h2>
       <p class="toView">
         预览：
         <a href="https://cutyourteeth.github.io/tinyApps/todolist/dist/">
@@ -70,22 +87,58 @@
     </div>
 
     <div class="content-wrapper">
-      <h2>4.宣传web(DJ&amp;Sets)(占位)</h2>
-      <p class="toView">
-        预览：
-        <a href="https://cutyourteeth.github.io/first-git-sample/">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
+      <h2>5.自制小模块/工具/web插件</h2>
       <p class="toCode">
-        源码：
-        <a href="https://github.com/cutyourteeth/first-git-sample">
+        各个小项目源码合集：
+        <a href="https://github.com/cutyourteeth/tinyApps">
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description">
-        简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。
-      </p>
+
+      <div class="grid">
+        <div class="item">
+          <h4 class="tinyTitle">(1).pc端滑动banner</h4>
+          <p class="toView tinyApps">
+            预览：
+            <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swiper.html">
+              <span class="icon_2-github"></span>
+            </a>
+          </p>
+          <p class="description">简介：jQ编写,banner无限循环</p>
+        </div>
+
+        <div class="item">
+          <h4 class="tinyTitle">(2).移动端滑动banner</h4>
+          <p class="toView tinyApps">
+            预览：
+            <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swpier-mobile-oneway.html">
+              <span class="icon_2-github"></span>
+            </a>
+          </p>
+          <p class="description">简介：数量有限,回弹动画</p>
+        </div>
+
+        <div class="item">
+          <h4 class="tinyTitle">(3).keyCodeMap</h4>
+          <p class="toView tinyApps">
+            预览：
+            <a href="https://cutyourteeth.github.io/tinyApps/keyCodeMap/keyCode.html">
+              <span class="icon_2-github"></span>
+            </a>
+          </p>
+          <p class="description">简介：查询键盘映射</p>
+        </div>
+        <div class="item">
+          <h4 class="tinyTitle">(4).射门(占位)</h4>
+          <p class="toView tinyApps">
+            预览：
+            <a href="https://cutyourteeth.github.io/tinyApps/keyCodeMap/keyCode.html">
+              <span class="icon_2-github"></span>
+            </a>
+          </p>
+          <p class="description">简介：射门小游戏(占位)</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -139,6 +192,19 @@ export default {
       font-weight: 500;
       margin-top: 10px;
       font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: start;
+      margin-top: 20px;
+
+      .item {
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 2px;
+      }
     }
 
     .description {
