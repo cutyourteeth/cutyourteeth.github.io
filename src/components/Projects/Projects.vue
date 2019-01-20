@@ -50,16 +50,16 @@
     </div>
 
     <div class="content-wrapper">
-      <h2>3.京东金融webapp(占位)</h2>
+      <h2>3.京东金融webapp</h2>
       <p class="toView">
         预览：
-        <a href="https://cutyourteeth.github.io/first-git-sample/">
+        <a href="https://cutyourteeth.github.io/JD/JD-finance/dist">
           <span class="icon_2-github"></span>
         </a>
       </p>
       <p class="toCode">
         源码：
-        <a href="https://github.com/cutyourteeth/first-git-sample">
+        <a href="https://github.com/cutyourteeth/JD">
           <span class="icon_2-github"></span>
         </a>
       </p>
