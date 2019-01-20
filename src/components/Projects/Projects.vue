@@ -13,7 +13,7 @@
         源码：
         <a href="https://github.com/cutyourteeth/diary/" class="icon_2-github"></a>
       </p>
-      <p class="description">
+      <p class="description lift">
         简介：原生Javascript开发，未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储，界面布局较完善。
         1.indexedDB数据库的写入、输出、筛选；
         2.响应式布局，试用pc和移动端；
@@ -41,7 +41,7 @@
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description">
+      <p class="description lift">
         简介：开发工具Vue-cli &amp; Webpack &amp; Stylus 以及其他插件;
         完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。
         基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载、分类，商家信息，评分)
@@ -63,7 +63,7 @@
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description">
+      <p class="description lift">
         简介：开发工具Vue-cli &amp; Webpack &amp; SCSS 以及插件: vue-awesome-slider &amp; HotCSS;
         利用vue框架，仿照京东金融的app所做的webapp界面。
         在本项目内，开始研究完全的自适应，根据rem以及viewport来控制页面元素大小；之后模仿了vue-awesome-slider做了一个滑动banner；
@@ -85,14 +85,14 @@
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description">
+      <p class="description lift">
         简介：一个计划清单webapp。
         使用了vue-cli、webpack、stylus，采用gird布局，储存方式为localStorage；
       </p>
     </div>
 
     <div class="content-wrapper">
-      <h2>5.自制小模块/工具/web插件</h2>
+      <h2>5.自制小模块/工具/插件</h2>
       <p class="toCode">
         各个小项目源码合集：
         <a href="https://github.com/cutyourteeth/tinyApps">
@@ -182,14 +182,18 @@ export default {
     &>h2 {
       font-weight: 500;
       line-height: 2;
+      font-size: 1.4em;
       padding-bottom: 10px;
-      text-align: center;
+      text-align: left;
     }
 
     .toView, .toCode {
-      line-height: 2;
-      font-weight: 500;
-      color: $lightPink;
+      color: #333;
+
+      a {
+        line-height: 2;
+        color: $lightPink;
+      }
     }
 
     .danger {
@@ -206,18 +210,26 @@ export default {
       margin-top: 20px;
 
       .item {
+        font-weight: 500;
+        width: 85%;
+        height: 90%;
         margin-bottom: 5px;
         padding: 5px;
-        border-radius: 2px;
+        border-radius: 12px;
+        background-color: rgba(248, 242, 239, 0.9);
       }
     }
 
     .description {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.7);
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.7;
       white-space: pre-line;
+
+      &.lift {
+        margin-top: -1em;
+      }
 
       .points {
         display: inline-block;

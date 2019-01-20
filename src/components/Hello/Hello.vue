@@ -42,19 +42,6 @@ export default {
     }
   },
   methods: {
-
-    changeColor (e) {
-      let ele = e.currentTarget
-      console.log(ele.style)
-      if (ele) {
-        let setter = Math.floor(Math.random * 3 * 2) / 2
-        switch (setter) {
-          case 0: ele.style.backgroundColor = this.color.subOrange; break
-          case 1: ele.style.backgroundColor = this.color.lightGreen; break
-          case 2: ele.style.backgroundColor = this.color.lightPink; break
-        }
-      }
-    }
   },
   components: {
     'v-portfolio': Portfolio,
@@ -71,7 +58,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 80%;
+  width: 92%;
   min-width: 300px;
   max-width: 810px;
   box-sizing: border-box;
@@ -121,7 +108,7 @@ export default {
 
       &:nth-child(1) > a {
         bg-image('education_w');
-        background-image url('http://img1.ph.126.net/DsmpEy0pn6_yidTRn8ODAQ==/3219792258693741445.png')
+        background-image: url('http://img1.ph.126.net/DsmpEy0pn6_yidTRn8ODAQ==/3219792258693741445.png');
         background-color: $subOrange;
 
         &:after {
@@ -139,7 +126,7 @@ export default {
 
       &:nth-child(2) > a {
         bg-image('skills_w');
-        background-image url('http://img0.ph.126.net/aYrokBX7ZAX3sLdErNN3ZA==/5717511041970859191.png')
+        background-image: url('http://img0.ph.126.net/aYrokBX7ZAX3sLdErNN3ZA==/5717511041970859191.png');
         background-color: $lightGreen;
 
         &.router-link-active {
@@ -157,7 +144,7 @@ export default {
 
       &:nth-child(3) > a {
         bg-image('projects_w');
-        background-image url('http://img1.ph.126.net/k6ykzT3JB_oOyq_3bj1jvA==/1896859868153687167.png')
+        background-image: url('http://img1.ph.126.net/k6ykzT3JB_oOyq_3bj1jvA==/1896859868153687167.png');
         background-color: $lightPink;
 
         &.router-link-active {
