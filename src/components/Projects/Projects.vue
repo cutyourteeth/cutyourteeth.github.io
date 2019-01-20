@@ -63,7 +63,12 @@
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description">简介：使用jquery&amp;bootstrap库制作的简单dj介绍和现场set宣传web。(占位)</p>
+      <p class="description">
+        简介：开发工具Vue-cli &amp; Webpack &amp; SCSS 以及插件: vue-awesome-slider &amp; HotCSS;
+        利用vue框架，仿照京东金融的app所做的webapp界面。
+        在本项目内，开始研究完全的自适应，根据rem以及viewport来控制页面元素大小；之后模仿了vue-awesome-slider做了一个滑动banner；
+        着重研究学习了vue模块化、css模块化的核心思路，简述一下就是将模块抽象，一步步提取最骨干的架构，降低最基本模块的耦合程度，提高适用的范围。
+      </p>
     </div>
 
     <div class="content-wrapper">
