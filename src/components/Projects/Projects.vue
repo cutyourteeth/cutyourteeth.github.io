@@ -53,13 +53,13 @@
       <h2>3.京东金融webapp</h2>
       <p class="toView">
         预览：
-        <a href="https://cutyourteeth.github.io/JD/JD-finance/dist">
+        <a href="https://cutyourteeth.github.io/JDFinance/dist">
           <span class="icon_2-github"></span>
         </a>
       </p>
       <p class="toCode">
         源码：
-        <a href="https://github.com/cutyourteeth/JD">
+        <a href="https://github.com/cutyourteeth/JDFinance">
           <span class="icon_2-github"></span>
         </a>
       </p>
