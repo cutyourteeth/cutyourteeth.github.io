@@ -41,14 +41,30 @@
 
 @keyframes breathLight {
   0% {
+    opacity: 0;
     color: white;
-    box-shadow: 0px 0px 10px 5px black;
-    background-color: black;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  20% {
+    opacity: 1;
+    color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    color: rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px 5px $lightGreen, 0 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 20px 10px $lightGreen;
+    background-color: $lightGreen;
   }
 
   100% {
-    color: black;
-    box-shadow: 0px 0px 10px 5px $lightGreen, 0 0 2px 8px black, 0 0 20px 10px $lightGreen;
+    opacity: 0;
+    color: rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px 5px $lightGreen, 0 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 20px 10px $lightGreen;
     background-color: $lightGreen;
   }
 }
@@ -83,5 +99,4 @@ breathLight($time) {
   animation-delay: 0;
   animation-duration: $time;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
 }

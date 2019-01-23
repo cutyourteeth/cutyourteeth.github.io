@@ -3,8 +3,9 @@
     <h1 class="title">举几个栗子</h1>
     <p class="info">(this web built with Vue-cli &amp; Webpack &amp; Stylus)</p>
     <hr>
+    <!-- 日记 -->
     <div class="content-wrapper">
-      <h2>1.日记册(diarywebapp)</h2>
+      <h2>1.日记本-diary-webapp</h2>
       <p class="toView">
         预览：
         <a href="https://cutyourteeth.github.io/diary/" class="icon_2-github"></a>
@@ -13,44 +14,29 @@
         源码：
         <a href="https://github.com/cutyourteeth/diary/" class="icon_2-github"></a>
       </p>
-      <p class="description lift">
-        简介：原生Javascript开发，未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储，界面布局较完善。
-        1.indexedDB数据库的写入、输出、筛选；
-        2.响应式布局，试用pc和移动端；
-        2.自制modal框体、动画、input样式等；
-        3.自制toast提示窗体；
-        4.首页背景轮播；
-        5.添加本地图片，可多图添加，存入数据库，展示框体内的图片依据数量不同布局图片；
-        6.日记分类，筛选。
-        7.模仿了canvas气泡背景，以及自制了一个算数小游戏；
+      <p class="description">
+        <span class="pink">项目简介：</span>原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;
+        <span
+          class="pink"
+        >开发工具：</span>JS Stylus;
+        <span class="pink">项目特色：</span>
+        1、用JS实现indexedDB数据库操作，相比Cookies和localStorage，数据结构化，运用后端数据库逻辑；
+        2、完整的日记的写入、输出、分类、筛选、修改、删除、添加图片、添加多图功能；
+        3、响应式布局，对pc和移动端分别优化（虽然没下一个项目的解决方案完美）；
+        4、自制modal框体、toast提示浮层、各个组件动画（滑动、淡入、淡出等）、改造美化了Input单选框；
+        5、首页背景css轮播；
+        6、日记展示区的图片可依据数量不同而显示不同布局、单张图片时将采用大图框的显示布局、同时根据每张图片长宽比实现最好的展示方式；
+        7、canvas气泡、水母背景（模仿自codepen的一个项目），以及自制了一个算数小游戏；
+        <span
+          class="pink"
+        >项目优势：</span>移动端PC端都试用（非过低版本的浏览器）、无需服务端，本地使用；
+        <span class="pink">项目展望：</span>我依然在维护app和开发新项目，将来会在简化逻辑、丰富业务、压缩代码上下功夫；
       </p>
-      <p class="danger">注意：由于本项目还在开发新特性，所有依赖资源储存在github，浏览时加载可能较慢；可使用移动端高版本浏览器。</p>
+      <p class="danger">注意：我依然再开发维护本项目，所有依赖资源储存在github，浏览时加载可能较慢；可使用移动端高版本浏览器。</p>
     </div>
-
+    <!-- 京东金融 -->
     <div class="content-wrapper">
-      <h2>2.饿了么webapp</h2>
-      <p class="toView">
-        预览：
-        <a href="https://cutyourteeth.github.io/ele-webapp/dist/">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="toCode">
-        源码：
-        <a href="https://cutyourteeth.github.io/ele-webapp/">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="description lift">
-        简介：开发工具Vue-cli &amp; Webpack &amp; Stylus 以及其他插件;
-        完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。
-        基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载、分类，商家信息，评分)
-      </p>
-      <p class="danger">注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解。</p>
-    </div>
-
-    <div class="content-wrapper">
-      <h2>3.京东金融webapp</h2>
+      <h2>2.京东金融-webapp</h2>
       <p class="toView">
         预览：
         <a href="https://cutyourteeth.github.io/JDFinance/dist">
@@ -63,12 +49,43 @@
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description lift">
-        简介：开发工具Vue-cli &amp; Webpack &amp; SCSS 以及插件: vue-awesome-slider &amp; HotCSS;
-        利用vue框架，仿照京东金融的app所做的webapp界面。
-        在本项目内，开始研究完全的自适应，根据rem以及viewport来控制页面元素大小；之后模仿了vue-awesome-slider做了一个滑动banner；
-        着重研究学习了vue模块化、css模块化的核心思路，简述一下就是将模块抽象，一步步提取最骨干的架构，降低最基本模块的耦合程度，提高适用的范围。
+      <p class="description">
+        <span class="pink">项目简介：</span>利用vue框架，仿照京东金融的app所做的webapp界面。
+        <span class="pink">开发工具：</span>Vue-cli &amp; Webpack &amp; SCSS 以及插件: vue-awesome-slider &amp; HotCSS &amp; px2rem;
+        <span
+          class="pink"
+        >项目特色：</span>
+        1、完美自适应：根据rem以及viewport来控制页面元素大小；hotcss计算端口像素比，将各元素由设计稿px单位转换为rem，试验于S8、ipad、iphone6上均实现了自适应；
+        2、模块化CSS（SCSS）：使用SCSS的构造基本单元（panel、banner、slider）的mixin样式，在vue-style模块化本组件css，不会污染全局样式。该方案优于scope；
+        3、模块化vue组件：在项目初期我将网页各单元抽象出了一些最基本的组件结构，最大限度控制组件耦合程度，提高适用的范围，例如panel组件衍生其他界面的组件，各个子组件在各个分页目录下变种维护，组件思路清晰，利于后期维护
+        <span
+          class="pink"
+        >项目优势：</span>移动端显示保持一致；细致的模块化利于项目做大、宽展、维护；前后端分离，可独立调试；
+        <span class="pink">项目展望：</span>项目完成之后模仿了vue-awesome-slider用js做了一个滑动banner，希望能扩展，学习这个插件的厉害之处。项目有很大拓展空间，可开发成一个完整spa；
       </p>
+    </div>
+    <!-- 饿了么 -->
+    <div class="content-wrapper">
+      <h2>3.饿了么-webapp</h2>
+      <p class="toView">
+        预览：
+        <a href="https://cutyourteeth.github.io/ele-webapp/dist/">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="toCode">
+        源码：
+        <a href="https://cutyourteeth.github.io/ele-webapp/">
+          <span class="icon_2-github"></span>
+        </a>
+      </p>
+      <p class="description">
+        <span class="pink">项目简介：</span>模仿饿了么界面开发的webapp；
+        <span class="pink">开发工具：</span>Vue-cli &amp; Webpack &amp; Stylus 以及其他插件;
+        <span class="pink">项目特点：</span>完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。
+        基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载.分类，商家信息，评分)
+      </p>
+      <p class="danger">注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解。</p>
     </div>
 
     <div class="content-wrapper">
@@ -85,9 +102,9 @@
           <span class="icon_2-github"></span>
         </a>
       </p>
-      <p class="description lift">
+      <p class="description">
         简介：一个计划清单webapp。
-        使用了vue-cli、webpack、stylus，采用gird布局，储存方式为localStorage；
+        使用了vue-cli.webpack.stylus，采用gird布局，储存方式为localStorage；
       </p>
     </div>
 
@@ -134,14 +151,14 @@
           <p class="description">简介：查询键盘映射</p>
         </div>
         <div class="item">
-          <h4 class="tinyTitle">(4).射门(占位)</h4>
+          <h4 class="tinyTitle">(4).射门(已撤下、占位)</h4>
           <p class="toView tinyApps">
             预览：
             <a href="https://cutyourteeth.github.io/tinyApps/keyCodeMap/keyCode.html">
               <span class="icon_2-github"></span>
             </a>
           </p>
-          <p class="description">简介：射门小游戏(占位)</p>
+          <p class="description">简介：射门小游戏(已撤下、占位)</p>
         </div>
       </div>
     </div>
@@ -161,6 +178,10 @@ export default {
 @import '../../common/stylus/mixin';
 
 .projects {
+  .pink {
+    color: $lightPink;
+  }
+
   .info {
     text-align: center;
     color: $lightPink;
@@ -226,10 +247,6 @@ export default {
       font-weight: 400;
       line-height: 1.7;
       white-space: pre-line;
-
-      &.lift {
-        margin-top: -1em;
-      }
 
       .points {
         display: inline-block;

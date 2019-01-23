@@ -65,7 +65,7 @@ export default {
   background-color: #fff;
   margin: 50px auto;
   padding: 50px 0;
-  background-color: rgba(15, 15, 15, 0.9);
+  background-color: rgba(15, 15, 15, 0.3);
   border-radius: 12px;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 
