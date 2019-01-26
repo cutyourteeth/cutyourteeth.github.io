@@ -166,9 +166,10 @@ export default {
     display: block;
     position: relative;
     flex: 1;
-    width-content(90%, 0, 50px);
+    width-content(95%, 0, 50px);
     border: none;
     border-radius: 10px;
+    padding: 10px 10px 50px;
     font-size: 14px;
     line-height: 22px;
     background-color: rgba(255, 255, 255, 1);
