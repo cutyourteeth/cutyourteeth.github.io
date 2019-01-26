@@ -3,111 +3,35 @@
     <h1 class="title">举几个栗子</h1>
     <p class="info">(this web built with Vue-cli &amp; Webpack &amp; Stylus)</p>
     <hr>
-    <!-- 日记 -->
-    <div class="content-wrapper">
-      <h2>1.日记本-diary-webapp</h2>
+    <!-- 主要项目框体 -->
+    <div class="content-wrapper" v-for="(item,key) in items" :key="key">
+      <h2>{{key+1}}. {{item.title}}</h2>
       <p class="toView">
         预览：
-        <a href="https://cutyourteeth.github.io/diary/" class="icon_2-github"></a>
+        <a :href="item.view" class="icon_2-github"></a>
       </p>
       <p class="toCode">
         源码：
-        <a href="https://github.com/cutyourteeth/diary/" class="icon_2-github"></a>
+        <a :href="item.code" class="icon_2-github"></a>
       </p>
+      <div class="gallery">
+        <img v-for="(photo,pkey) in item.photos" :key="pkey" class="imgCell" :src="photo.src">
+      </div>
       <p class="description">
-        <span class="pink">项目简介：</span>原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;
-        <span
-          class="pink"
-        >开发工具：</span>JS Stylus;
+        <span class="pink">项目简介：</span>
+        {{item.description}}
+        <span class="pink">开发工具：</span>
+        {{item.devtool}}
         <span class="pink">项目特色：</span>
-        1、用JS实现indexedDB数据库操作，相比Cookies和localStorage，数据结构化，运用后端数据库逻辑；
-        2、完整的日记的写入、输出、分类、筛选、修改、删除、添加图片、添加多图功能；
-        3、响应式布局，对pc和移动端分别优化（虽然没下一个项目的解决方案完美）；
-        4、自制modal框体、toast提示浮层、各个组件动画（滑动、淡入、淡出等）、改造美化了Input单选框；
-        5、首页背景css轮播；
-        6、日记展示区的图片可依据数量不同而显示不同布局、单张图片时将采用大图框的显示布局、同时根据每张图片长宽比实现最好的展示方式；
-        7、canvas气泡、水母背景（模仿自codepen的一个项目），以及自制了一个算数小游戏；
-        <span
-          class="pink"
-        >项目优势：</span>移动端PC端都试用（非过低版本的浏览器）、无需服务端，本地使用；
-        <span class="pink">项目展望：</span>由于本项目编写时间较早，彼时对于js的认知稍浅，现在回看可改进空间比较大，将来会在简化逻辑、丰富业务、压缩代码上下功夫；
+        {{item.character}}
+        <span class="pink">项目优势：</span>
+        {{item.advance}}
+        <span class="pink">项目展望：</span>
+        {{item.future}}
       </p>
-      <p class="danger">注意：本项目还在拓展维护，所有依赖资源储存在github，浏览时加载可能较慢；可使用移动端高版本浏览器。</p>
+      <p class="danger">{{item.caution}}</p>
     </div>
-    <!-- 京东金融 -->
-    <div class="content-wrapper">
-      <h2>2.京东金融-webapp</h2>
-      <p class="toView">
-        预览：
-        <a href="https://cutyourteeth.github.io/JDFinance/dist">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="toCode">
-        源码：
-        <a href="https://github.com/cutyourteeth/JDFinance">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="description">
-        <span class="pink">项目简介：</span>利用vue框架，仿照京东金融的app所做的webapp界面。
-        <span class="pink">开发工具：</span>Vue-cli &amp; Webpack &amp; SCSS 以及插件: vue-awesome-slider &amp; HotCSS &amp; px2rem;
-        <span
-          class="pink"
-        >项目特色：</span>
-        1、完美自适应：根据rem以及viewport来控制页面元素大小；hotcss计算端口像素比，将各元素由设计稿px单位转换为rem，试验于S8、ipad、iphone6上均实现了自适应；
-        2、模块化CSS（SCSS）：使用SCSS的构造基本单元（panel、banner、slider）的mixin样式，在vue-style模块化本组件css，不会污染全局样式。该方案优于scope；
-        3、模块化vue组件：在项目初期我将网页各单元抽象出了一些最基本的组件结构，最大限度控制组件耦合程度，提高适用的范围，例如panel组件衍生其他界面的组件，各个子组件在各个分页目录下变种维护，组件思路清晰，利于后期维护
-        <span
-          class="pink"
-        >项目优势：</span>移动端显示保持一致；细致的模块化利于项目做大、宽展、维护；前后端分离，可独立调试；
-        <span class="pink">项目展望：</span>项目完成之后模仿了vue-awesome-slider用js做了一个滑动banner，希望能扩展，学习这个插件的厉害之处。项目有很大拓展空间，可开发成一个完整spa；
-      </p>
-    </div>
-    <!-- 饿了么 -->
-    <div class="content-wrapper">
-      <h2>3.饿了么-webapp</h2>
-      <p class="toView">
-        预览：
-        <a href="https://cutyourteeth.github.io/ele-webapp/dist/">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="toCode">
-        源码：
-        <a href="https://cutyourteeth.github.io/ele-webapp/">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="description">
-        <span class="pink">项目简介：</span>模仿饿了么界面开发的webapp；
-        <span class="pink">开发工具：</span>Vue-cli &amp; Webpack &amp; Stylus 以及其他插件;
-        <span class="pink">项目特点：</span>完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。
-        基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载.分类，商家信息，评分)
-      </p>
-      <p class="danger">注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解。</p>
-    </div>
-
-    <div class="content-wrapper">
-      <h2>4.计划表(tiny-todo-list)</h2>
-      <p class="toView">
-        预览：
-        <a href="https://cutyourteeth.github.io/tinyApps/todolist/dist/">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="toCode">
-        源码：
-        <a href="https://github.com/cutyourteeth/tinyApps/todolist">
-          <span class="icon_2-github"></span>
-        </a>
-      </p>
-      <p class="description">
-        简介：一个计划清单webapp。
-        使用了vue-cli.webpack.stylus，采用gird布局，储存方式为localStorage；
-      </p>
-    </div>
-
+    <!-- 小工具组 -->
     <div class="content-wrapper">
       <h2>5.自制小模块/工具/插件</h2>
       <p class="toCode">
@@ -162,14 +86,95 @@
         </div>
       </div>
     </div>
+    <!-- modal -->
+    <Modal></Modal>
   </div>
 </template>
 
 <script>
+import Modal from './Modal'
 export default {
   data () {
     return {
+      items: [
+        {
+          title: '日记本-diary-webapp',
+          view: 'https://cutyourteeth.github.io/diary/',
+          code: 'https://github.com/cutyourteeth/diary/',
+          photos: [{
+            src: 'http://img2.ph.126.net/B079rBDlbZWQiZYx4QdYFQ==/1984117110933858209.png'
+          }, {
+            src: 'http://img0.ph.126.net/G-CGDU7M3otjS8OU-5N8gA==/6597893300868395247.png'
+          }, {
+            src: 'http://img2.ph.126.net/aT3gX_1_75-PsarsA78XgA==/6631487779146356432.png'
+          }
+          ],
+          description: '原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;',
+          devtool: 'JavaScript Stylus;',
+          character: '1、用JS实现indexedDB数据库操作，相比Cookies和localStorage，数据结构化，运用后端数据库逻辑；\n2、完整的日记的写入、输出、分类、筛选、修改、删除、添加图片、添加多图功能；\n3、响应式布局，对pc和移动端分别优化（虽然没下一个项目的解决方案完美）；\n4、自制modal框体、toast提示浮层、各个组件动画（滑动、淡入、淡出等）、改造美化了Input单选框；\n5、首页背景css轮播；6、日记展示区的图片可依据数量不同而显示不同布局、单张图片时将采用大图框的显示布局、同时根据每张图片长宽比实现最好的展示方式；\n7、canvas气泡、水母背景（模仿自codepen的一个项目），以及自制了一个算数小游戏；',
+          advance: '移动端PC端都试用（非过低版本的浏览器）、无需服务端，本地使用；',
+          future: '由于本项目编写时间较早，彼时对于js的认知稍浅，现在回看可改进空间比较大，将来会在简化逻辑、丰富业务、压缩代码上下功夫；',
+          caution: '注意：本项目还在拓展维护，所有依赖资源储存在github，浏览时加载可能较慢；可使用移动端高版本浏览器。'
+        },
+
+        {
+          title: '京东金融-webapp',
+          view: 'https://cutyourteeth.github.io/JDFinance/dist',
+          code: 'https://github.com/cutyourteeth/JDFinance',
+          photos: [{
+            src: 'http://img2.ph.126.net/KuW7o5zYLyQkvIOjVBSVwA==/6597316057263699497.png'
+          }, {
+            src: 'http://img2.ph.126.net/S80_rvju_VK4Ve9G6XOyUg==/6597341346031523504.png'
+          }, {
+            src: 'http://img2.ph.126.net/bOX65BTzK1IApxeMpfQIoA==/6597268778263701248.png'
+          }
+          ],
+          description: '利用vue框架，仿照京东金融的app所做的webapp界面；',
+          devtool: 'Vue-cli & Webpack & SCSS 以及插件: vue-awesome-slider & HotCSS & px2rem；',
+          character: '1、完美自适应：根据rem以及viewport来控制页面元素大小；hotcss计算端口像素比，将各元素由设计稿px单位转换为rem，试验于S8、ipad、iphone6上均实现了自适应；\n2、模块化CSS（SCSS）：使用SCSS的构造基本单元（panel、banner、slider）的mixin样式，在vue-style模块化本组件css，不会污染全局样式。该方案优于scope；\n3、模块化vue组件：在项目初期我将网页各单元抽象出了一些最基本的组件结构，最大限度控制组件耦合程度，提高适用的范围，例如panel组件衍生其他界面的组件，各个子组件在各个分页目录下变种维护，组件思路清晰，利于后期维护',
+          advance: '移动端显示保持一致；细致的模块化利于项目做大、宽展、维护；前后端分离，可独立调试；',
+          future: '项目完成之后模仿了vue-awesome-slider用js做了一个滑动banner，希望能扩展，学习这个插件的厉害之处。项目有很大拓展空间，可开发成一个完整spa；',
+          caution: ''
+        },
+
+        {
+          title: '饿了么-webapp',
+          view: 'https://cutyourteeth.github.io/ele-webapp/dist/',
+          code: 'https://cutyourteeth.github.io/ele-webapp/',
+          photos: [
+            {
+              src: 'http://img1.ph.126.net/hFugcDxuztHS23ExV62y3g==/6597672299031208561.png'
+            }, {
+              src: 'http://img1.ph.126.net/Wko2rxU9cl_B5SZdN4AihQ==/1256222821160048578.png'
+            }
+          ],
+          description: '模仿饿了么界面开发的webapp；',
+          devtool: 'Vue-cli & Webpack & Stylus 以及其他插件；',
+          character: '完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载.分类，商家信息，评分)',
+          advance: '',
+          future: '',
+          caution: '注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解。'
+        },
+
+        {
+          title: '计划表 tiny-todo-list',
+          view: 'https://cutyourteeth.github.io/tinyApps/todolist/dist/',
+          code: 'https://github.com/cutyourteeth/tinyApps/todolist',
+          photos: [
+            { src: 'http://img1.ph.126.net/FgVfszYn4KvMrByE77Fbfg==/3260887605293581786.png' }
+          ],
+          description: '一个计划清单webapp；',
+          devtool: 'Vue Stylus;',
+          character: '使用了vue-cli.webpack.stylus，采用gird布局，储存方式为localStorage；',
+          advance: '',
+          future: '',
+          caution: ''
+        }
+      ]
     }
+  },
+  components:{
+    Modal
   }
 }
 </script>
@@ -186,6 +191,13 @@ export default {
     text-align: center;
     color: $lightPink;
   }
+
+.gallery{
+  
+  .imgCell {
+    width:
+  }
+}
 
   .icon_2-github {
     color: $lightPink;
