@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     <h1 class="title">举几个栗子</h1>
-    <p class="info">(this web built with Vue-cli &amp; Webpack &amp; Stylus)</p>
+    <p class="info">(本页使用 Vue-cli &amp; Webpack &amp; Stylus 制作)</p>
     <hr>
     <!-- 主要项目框体 -->
     <div class="content-wrapper" v-for="(item,key) in items" :key="key">
@@ -20,6 +20,7 @@
       <div class="gallery">
         <img v-for="(photo,pkey) in item.photos" :key="pkey" class="img" :src="photo.src">
       </div>
+      <p class="clicktoView">点击查看图片</p>
       <p class="description">
         <span class="pink">项目简介：</span>
         {{item.description}}
@@ -105,13 +106,17 @@ export default {
           view: 'https://cutyourteeth.github.io/diary/',
           code: 'https://github.com/cutyourteeth/diary/',
           photos: [{
-            src: '//img2.ph.126.net/B079rBDlbZWQiZYx4QdYFQ==/1984117110933858209.png'
-          }, {
-            src: '//img0.ph.126.net/G-CGDU7M3otjS8OU-5N8gA==/6597893300868395247.png'
-          }, {
+            // src: '../../asstets/screenshots/d1.png'
             src: '//img2.ph.126.net/aT3gX_1_75-PsarsA78XgA==/6631487779146356432.png'
           }, {
-            src: '//img1.ph.126.net/iJmJs9kwTNTMk1nNOHhikQ==/6597741568263756799.png'
+            // src: '../../asstets/screenshots/d2.png'
+            src: '//img0.ph.126.net/G-CGDU7M3otjS8OU-5N8gA==/6597893300868395247.png'
+          }, {
+            // src: '../../asstets/screenshots/d3.png'
+            src: '//img0.ph.126.net/TVT_yxkY5z5--1Wg1HUrAg==/1939925539590455478.png'
+          }, {
+            // src: '../../asstets/screenshots/d4.png'
+            src: '//img1.ph.126.net/7Oiw9GYXC3FWEHlbEydp9A==/6597993356426518999.png'
           }
           ],
           description: '原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;',
@@ -195,10 +200,12 @@ export default {
   .info {
     text-align: center;
     color: $lightPink;
+    font-weight: 400;
   }
 
   .gallery {
     display: flex;
+    margin: 10px auto;
     width: 100%;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -212,6 +219,12 @@ export default {
     }
   }
 
+  .clicktoView {
+    text-align: center;
+    font-size: 10px;
+    color: #999;
+  }
+
   .icon_2-github {
     color: $lightPink;
     font-size: 20px;
@@ -223,16 +236,16 @@ export default {
 
   .content-wrapper {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 3em;
     background-color: rgba(240, 240, 240, 0.36);
     border-radius: 5px;
     padding: 0 2px;
 
     &>h2 {
       font-weight: 500;
-      line-height: 2;
-      font-size: 1.4em;
-      text-align: left;
+      line-height: 3;
+      font-size: 1.2em;
+      text-align: center;
     }
 
     .toView, .toCode {
