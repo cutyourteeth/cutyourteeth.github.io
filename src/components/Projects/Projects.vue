@@ -91,12 +91,12 @@
       </div>
     </div>
     <!-- modal -->
-    <!-- <Modal></Modal> -->
+    <Modal v-if='modalShow'></Modal>
   </div>
 </template>
 
 <script>
-// import Modal from './Modal'
+import Modal from './Modal'
 export default {
   data () {
     return {
@@ -180,11 +180,12 @@ export default {
           future: '可拓展处很多，例如分类，提醒，警告等模块；',
           caution: ''
         }
-      ]
+      ],
+      modalShow:false
     }
   },
   components: {
-    // Modal
+    Modal
   }
 }
 </script>
