@@ -22,7 +22,7 @@
           v-for="(photo,pkey) in item.photos"
           :key="pkey"
           class="image"
-          :click="imageDeliever(event.target)"
+          @click="imageDeliever(photo.src)"
           :src="photo.src"
         >
       </div>
@@ -97,15 +97,12 @@
       </div>
     </div>
     <!-- modal -->
-    <Modal v-if="!!modalShow" :isImage="isImage"></Modal>
+    <Modal v-if="!!modalShow" :isImage="isImage" :darkRate="10" @modalOff="modalOff()"></Modal>
   </div>
 </template>
 
 <script>
 import Modal from './Modal'
-let images = document.querySelectorAll('.image')
-let wrapper = document.querySelectorAll('.content-wrapper')
-
 export default {
   data () {
     return {
@@ -202,26 +199,18 @@ export default {
     Modal
   },
   methods: {
-    imageDeliever (target) {
-      (target.tagName == 'img') ? modalOn(target) : false
-      let modalOn = (target) => {
-        isImage.src = target.src
-        isImage.ratio = target.innerWidth / target.innerHeight
-        modalShow = true
-      }
+    imageDeliever (src) {
+      this.isImage.src = src
+      this.modalShow = true
+    },
+    modalOff () {
+      this.modalShow = false
     }
   }
-  // mounted: function () {
-  //   if (!!isImage.check && wrapper.length > 0) {
-  //     wrapper.forEach(element => {
-  //       element.addEventListener('onclick', imageDeliever())
-  //     })
-  //   }
-  // }
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 @import '../../common/stylus/mixin';
 
 .projects {
@@ -242,7 +231,7 @@ export default {
     flex-flow: row wrap;
     justify-content: space-around;
 
-    .img {
+    .image {
       margin: 5px;
       width: 20%;
       height: 20%;
