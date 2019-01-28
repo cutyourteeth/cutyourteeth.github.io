@@ -18,7 +18,13 @@
         <a :href="item.code" class="icon_2-github">{{item.code.replace('https://github','')}}</a>
       </p>
       <div class="gallery">
-        <img v-for="(photo,pkey) in item.photos" :key="pkey" class="img" :src="photo.src">
+        <img
+          v-for="(photo,pkey) in item.photos"
+          :key="pkey"
+          class="image"
+          :click="imageDeliever(event.target)"
+          :src="photo.src"
+        >
       </div>
       <p class="clicktoView">点击查看图片</p>
       <p class="description">
@@ -91,12 +97,15 @@
       </div>
     </div>
     <!-- modal -->
-    <Modal v-if='modalShow'></Modal>
+    <Modal v-if="!!modalShow" :isImage="isImage"></Modal>
   </div>
 </template>
 
 <script>
 import Modal from './Modal'
+let images = document.querySelectorAll('.image')
+let wrapper = document.querySelectorAll('.content-wrapper')
+
 export default {
   data () {
     return {
@@ -181,12 +190,34 @@ export default {
           caution: ''
         }
       ],
-      modalShow:false
+      isImage: {
+        check: true,
+        src: '',
+        ratio: 1
+      },
+      modalShow: false
     }
   },
   components: {
     Modal
+  },
+  methods: {
+    imageDeliever (target) {
+      (target.tagName == 'img') ? modalOn(target) : false
+      let modalOn = (target) => {
+        isImage.src = target.src
+        isImage.ratio = target.innerWidth / target.innerHeight
+        modalShow = true
+      }
+    }
   }
+  // mounted: function () {
+  //   if (!!isImage.check && wrapper.length > 0) {
+  //     wrapper.forEach(element => {
+  //       element.addEventListener('onclick', imageDeliever())
+  //     })
+  //   }
+  // }
 }
 </script>
 

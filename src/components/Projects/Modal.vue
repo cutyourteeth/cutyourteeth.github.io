@@ -1,43 +1,60 @@
 <template>
   <div :class="$this.modal">
     <!-- background always on -->
-    <div :class="$style.background" :backgroundType="backgroundType"></div>
-    <div :class="$style.textContent" v-if="!imgType">
-      <img :src="item.src" :class="$style.imageItem">
+    <div :class="$style.background"></div>
+    <!-- image-content or custom-content -->
+    <div :class="$style.imgContent" v-if="isImage.check">
+      <img :src="isImage.src" :class="$style.image">
     </div>
-    <div :class="$style.imgContent" v-if="!!imgType">
+    <div :class="$style.textContent" v-if="!isImage.check">
       <slot></slot>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+const imageElement = document.getElementsByClassName('$style.image')
 export default {
   props: {
-    size: {
-      type: String,
+    darkRate: {
+      type: Number,
       default () {
-        return 'normal'
+        return 6
       }
     },
-    innerType: {
-      type: Boolean,
+    isImage: {
+      type: Object,
       default () {
-        return false
+        return {
+          check: false,
+          src: '',
+          ratio: 1
+        }
       }
-    },
-    img
-  },
-
-  data () {
-    return {
-
     }
   },
+  data () {
+    return {
+    }
+  },
+  mounted: function () {
+    let screenRaito = window.innerWidth / window.innerHeight
+      (isImage.ratio > screenRatio) ? imageElement.className = '$style.image $style.imageHorizontal' : imageElement.className = '$style.image $style.imageVertical'
+  }
 }
 </script>
 
 <style module lang="stylus">
+.imageHorizontal {
+  width: 90%;
+  height: auto;
+}
+
+.imageVertical {
+  width: 90%;
+  height: auto;
+}
+
 .modal {
   position: fixed;
   top: 0;
