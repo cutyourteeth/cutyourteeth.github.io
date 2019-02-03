@@ -43,7 +43,7 @@
     </div>
     <!-- 小工具组 -->
     <div class="content-wrapper">
-      <h2>5.自制小模块/工具/插件</h2>
+      <h2>自制小模块/工具/插件</h2>
       <p class="toCode">
         各个小项目源码合集：
         <a href="https://github.com/cutyourteeth/tinyApps">
@@ -53,7 +53,18 @@
 
       <div class="grid">
         <div class="item">
-          <h4 class="tinyTitle">(1).pc端滑动banner</h4>
+          <h4 class="tinyTitle">(1).时钟</h4>
+          <p class="toView tinyApps">
+            预览：
+            <a href="https://cutyourteeth.github.io/jobinterview-test/clock/">
+              <span class="icon_2-github"></span>
+            </a>
+          </p>
+          <p class="description">简介：用canvas画的动态时钟。每秒更新</p>
+        </div>
+
+        <div class="item">
+          <h4 class="tinyTitle">(2).pc端滑动banner</h4>
           <p class="toView tinyApps">
             预览：
             <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swiper.html">
@@ -61,17 +72,6 @@
             </a>
           </p>
           <p class="description">简介：jQ编写,banner无限循环</p>
-        </div>
-
-        <div class="item">
-          <h4 class="tinyTitle">(2).移动端滑动banner</h4>
-          <p class="toView tinyApps">
-            预览：
-            <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swpier-mobile-oneway.html">
-              <span class="icon_2-github"></span>
-            </a>
-          </p>
-          <p class="description">简介：数量有限,回弹动画</p>
         </div>
 
         <div class="item">
@@ -84,15 +84,16 @@
           </p>
           <p class="description">简介：查询键盘映射</p>
         </div>
+
         <div class="item">
-          <h4 class="tinyTitle">(4).射门(已撤)</h4>
+          <h4 class="tinyTitle">(4).移动端滑动banner</h4>
           <p class="toView tinyApps">
             预览：
-            <a href="https://cutyourteeth.github.io/tinyApps/keyCodeMap/keyCode.html">
+            <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swpier-mobile-oneway.html">
               <span class="icon_2-github"></span>
             </a>
           </p>
-          <p class="description">简介：射门小游戏(占位)</p>
+          <p class="description">简介：数量有限,回弹动画</p>
         </div>
       </div>
     </div>
@@ -171,7 +172,26 @@ export default {
           future: '完善商家页面，修复vue迭代导致的一些遗留问题；',
           caution: '注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解；'
         },
-
+        {
+          title: 'Calendar 任务发布日历',
+          view: 'https://cutyourteeth.github.io/jobinterview-test/calendar/dist',
+          code: 'https://cutyourteeth.github.io/jobinterview-test/calendar/',
+          photos: [
+            {
+              src: '//img2.ph.126.net/PR4F0r9ylYuQKYKYSvZB4g==/777996835728819713.png'
+            }, {
+              src: '//img2.ph.126.net/7WNefe9U2_d98Dz1bEGCuA==/2110780850453773922.png'
+            }, {
+              src: '//img2.ph.126.net/tnOiV9ndY2M7vxwJZiMzWQ==/1896859868153701715.png'
+            }
+          ],
+          description: '这份项目是一次求职测试题目',
+          devtool: 'Vue-cli & Webpack & Stylus ',
+          character: '公历、星期、填充邻月、日历排列等功能，我本人自己构思写的。',
+          advance: '各设备自适应',
+          future: '动画！过渡动画、hover、active等样式制作，现在还不酷炫！新的分支！tiny-todo-list可以和这个合并',
+          caution: ''
+        },
         {
           title: '计划表 tiny-todo-list',
           view: 'https://cutyourteeth.github.io/tinyApps/todolist/dist/',
