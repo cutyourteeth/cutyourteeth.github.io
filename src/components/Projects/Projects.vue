@@ -180,9 +180,9 @@ export default {
             {
               src: '//img2.ph.126.net/PR4F0r9ylYuQKYKYSvZB4g==/777996835728819713.png'
             }, {
-              src: '//img2.ph.126.net/7WNefe9U2_d98Dz1bEGCuA==/2110780850453773922.png'
+              src: '//img1.ph.126.net/C1wZ2bH_PPimqkfqcg8qpA==/6597297365566037644.png'
             }, {
-              src: '//img2.ph.126.net/tnOiV9ndY2M7vxwJZiMzWQ==/1896859868153701715.png'
+              src: '//img2.ph.126.net/7WNefe9U2_d98Dz1bEGCuA==/2110780850453773922.png'
             }
           ],
           description: '这份项目是一次求职测试题目',
