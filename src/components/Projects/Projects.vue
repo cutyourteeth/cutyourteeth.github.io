@@ -157,7 +157,7 @@ export default {
         {
           title: '饿了么 webapp',
           view: 'https://cutyourteeth.github.io/ele-webapp/dist/',
-          code: 'https://cutyourteeth.github.io/ele-webapp/',
+          code: 'https://github.com/cutyourteeth/ele-webapp/',
           photos: [
             {
               src: '//img1.ph.126.net/hFugcDxuztHS23ExV62y3g==/6597672299031208561.png'
@@ -175,7 +175,7 @@ export default {
         {
           title: 'Calendar 任务发布日历',
           view: 'https://cutyourteeth.github.io/jobinterview-test/calendar/dist',
-          code: 'https://cutyourteeth.github.io/jobinterview-test/calendar/',
+          code: 'https://github.com/cutyourteeth/jobinterview-test/calendar/',
           photos: [
             {
               src: '//img2.ph.126.net/PR4F0r9ylYuQKYKYSvZB4g==/777996835728819713.png'
