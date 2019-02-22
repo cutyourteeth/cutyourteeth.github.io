@@ -192,6 +192,25 @@ export default {
           caution: ''
         },
         {
+          title: 'Ease-Timer',
+          view: '',
+          code: 'https://github.com/cutyourteeth/ease-timer',
+          photos: [
+            {
+              src: 'http://img2.ph.126.net/-koBtkjQBROqqBgZ5prVFg==/1262696745624598760.png'
+            },
+            {
+              src: 'http://img2.ph.126.net/DjnAKyfFdHXhceWfkwiehw==/6597969167170754714.png'
+            }
+          ],
+          description: '这份项目是一次求职测试题目',
+          devtool: 'Ionic4 & Angular7',
+          character: '健身放松计时器',
+          advance: '设定倒计时, 正向无限计时, 环形进度条, 符合我个人的健身计时需求',
+          future: '暂时平台为web,Ionic可实现native,以后改造',
+          caution: ''
+        },
+        {
           title: '计划表 tiny-todo-list',
           view: 'https://cutyourteeth.github.io/tinyApps/todolist/dist/',
           code: 'https://github.com/cutyourteeth/tinyApps/todolist',
