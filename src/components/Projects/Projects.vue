@@ -203,10 +203,10 @@ export default {
               src: 'http://img2.ph.126.net/DjnAKyfFdHXhceWfkwiehw==/6597969167170754714.png'
             }
           ],
-          description: '这份项目是一次求职测试题目',
+          description: '健身放松计时器',
           devtool: 'Ionic4 & Angular7',
-          character: '健身放松计时器',
-          advance: '设定倒计时, 正向无限计时, 环形进度条, 符合我个人的健身计时需求',
+          character: '设定倒计时, 正向无限计时, 环形进度条, 符合我个人的健身计时需求',
+          advance: '',
           future: '暂时平台为web,Ionic可实现native,以后改造',
           caution: ''
         },
