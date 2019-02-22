@@ -193,7 +193,7 @@ export default {
         },
         {
           title: 'Ease-Timer',
-          view: 'https://cutyourteeth.github.io/ease-timer/www/home',
+          view: 'https://cutyourteeth.github.io/ease-timer/www/',
           code: 'https://github.com/cutyourteeth/ease-timer',
           photos: [
             {
