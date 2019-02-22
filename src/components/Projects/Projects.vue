@@ -193,7 +193,7 @@ export default {
         },
         {
           title: 'Ease-Timer',
-          view: '',
+          view: 'https://cutyourteeth.github.io/ease-timer/www/home',
           code: 'https://github.com/cutyourteeth/ease-timer',
           photos: [
             {
@@ -206,7 +206,7 @@ export default {
           description: '健身放松计时器',
           devtool: 'Ionic4 & Angular7',
           character: '设定倒计时, 正向无限计时, 环形进度条, 符合我个人的健身计时需求',
-          advance: '',
+          advance: '可跨平台',
           future: '暂时平台为web,Ionic可实现native,以后改造',
           caution: ''
         },
