@@ -1,5 +1,6 @@
 <template>
   <div class="box">
+    <a href="https://cutyourteeth.github.io/handnote" class="note">Notes→</a>
     <v-portfolio></v-portfolio>
     <div class="tab">
       <div class="tab-item education icon">
@@ -68,6 +69,12 @@ export default {
   background-color: rgba(15, 15, 15, 0.3);
   border-radius: 12px;
   font-family: 'Source Sans Pro', Arial, sans-serif;
+
+  .note {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
 
   .tab {
     display: flex;
