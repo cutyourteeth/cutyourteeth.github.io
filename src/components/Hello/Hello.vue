@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <a href="https://cutyourteeth.github.io/handnote" class="note">Notes→</a>
+    <a href="https://cutyourteeth.github.io/handnote/web" class="note">Notes→</a>
     <v-portfolio></v-portfolio>
     <div class="tab">
       <div class="tab-item education icon">
