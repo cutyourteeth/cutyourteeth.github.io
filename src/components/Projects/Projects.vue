@@ -114,16 +114,16 @@ export default {
           code: 'https://github.com/cutyourteeth/diary/',
           photos: [{
             // src: '../../asstets/screenshots/d1.png'
-            src: '//img2.ph.126.net/aT3gX_1_75-PsarsA78XgA==/6631487779146356432.png'
+            src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rpfyetj20af0ijmyn.jpg'
           }, {
             // src: '../../asstets/screenshots/d2.png'
-            src: '//img0.ph.126.net/G-CGDU7M3otjS8OU-5N8gA==/6597893300868395247.png'
+            src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rnmoavj20af0ijjtp.jpg'
           }, {
             // src: '../../asstets/screenshots/d3.png'
-            src: '//img0.ph.126.net/TVT_yxkY5z5--1Wg1HUrAg==/1939925539590455478.png'
+            src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4rmwewnj20af0ijac5.jpg'
           }, {
             // src: '../../asstets/screenshots/d4.png'
-            src: '//img1.ph.126.net/7Oiw9GYXC3FWEHlbEydp9A==/6597993356426518999.png'
+            src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlypqij20ac0iidkk.jpg'
           }
           ],
           description: '原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;',
@@ -139,11 +139,11 @@ export default {
           view: 'https://cutyourteeth.github.io/JDFinance/dist',
           code: 'https://github.com/cutyourteeth/JDFinance',
           photos: [{
-            src: '//img2.ph.126.net/KuW7o5zYLyQkvIOjVBSVwA==/6597316057263699497.png'
+            src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
           }, {
-            src: '//img2.ph.126.net/S80_rvju_VK4Ve9G6XOyUg==/6597341346031523504.png'
+            src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
           }, {
-            src: '//img2.ph.126.net/bOX65BTzK1IApxeMpfQIoA==/6597268778263701248.png'
+            src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
           }
           ],
           description: '利用vue框架，仿照京东金融的app所做的webapp界面；',
@@ -160,9 +160,9 @@ export default {
           code: 'https://github.com/cutyourteeth/ele-webapp/',
           photos: [
             {
-              src: '//img1.ph.126.net/hFugcDxuztHS23ExV62y3g==/6597672299031208561.png'
+              src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlk8e1j20ah0ihdj4.jpg'
             }, {
-              src: '//img1.ph.126.net/Wko2rxU9cl_B5SZdN4AihQ==/1256222821160048578.png'
+              src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rf1z9mj20a90ign00.jpg'
             }
           ],
           description: '模仿饿了么界面开发的webapp；',
@@ -178,10 +178,10 @@ export default {
           code: 'https://github.com/cutyourteeth/jobinterview-test/calendar/',
           photos: [
             {
-              src: '//img2.ph.126.net/PR4F0r9ylYuQKYKYSvZB4g==/777996835728819713.png'
+              src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rgzst4j20af0ijjrs.jpg'
             },
             {
-              src: '//img2.ph.126.net/7WNefe9U2_d98Dz1bEGCuA==/2110780850453773922.png'
+              src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4riwgvmj20ac0ig0t5.jpg'
             }
           ],
           description: '这份项目是一次求职测试题目',
@@ -197,10 +197,10 @@ export default {
           code: 'https://github.com/cutyourteeth/ease-timer',
           photos: [
             {
-              src: 'http://img2.ph.126.net/-koBtkjQBROqqBgZ5prVFg==/1262696745624598760.png'
+              src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rn8xs4j20b40jm0t3.jpg'
             },
             {
-              src: 'http://img2.ph.126.net/DjnAKyfFdHXhceWfkwiehw==/6597969167170754714.png'
+              src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rfmwvuj20b00jm3yv.jpg'
             }
           ],
           description: '健身放松计时器',

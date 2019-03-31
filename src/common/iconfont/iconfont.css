@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1117487 */
+  src: url('//at.alicdn.com/t/font_1117487_sffdyq8u67.eot');
+  src: url('//at.alicdn.com/t/font_1117487_sffdyq8u67.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1117487_sffdyq8u67.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1117487_sffdyq8u67.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1117487_sffdyq8u67.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1117487_sffdyq8u67.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chat:before {
+  content: "\e7cf";
+}
+
+.icon-github:before {
+  content: "\e842";
+}
+
+.icon-skill:before {
+  content: "\e653";
+}
+
+.icon-code:before {
+  content: "\e601";
+}
+
+.icon-hat:before {
+  content: "\e656";
+}
+
+.icon-arrow-down:before {
+  content: "\e602";
+}
+
+.icon-Globe:before {
+  content: "\e714";
+}
+
+.icon-mail:before {
+  content: "\e769";
+}
+
+.icon-home:before {
+  content: "\e611";
+}

@@ -3,15 +3,18 @@
     <a href="https://cutyourteeth.github.io/handnote/web" class="note">Notes→</a>
     <v-portfolio></v-portfolio>
     <div class="tab">
-      <div class="tab-item education icon">
-        <router-link to="/education"></router-link>
-      </div>
-      <div class="tab-item skills icon">
-        <router-link to="/skills"></router-link>
-      </div>
-      <div class="tab-item projects icon">
-        <router-link to="/projects"></router-link>
-      </div>
+      <router-link class="tab-item" to="/education">
+        <div class="iconfont icon-hat"></div>
+        <h1>经历</h1>
+      </router-link>
+      <router-link class="tab-item" to="/skills">
+        <div class="iconfont icon-skill"></div>
+        <h1>技能</h1>
+      </router-link>
+      <router-link class="tab-item" to="/projects">
+        <div class="iconfont icon-code"></div>
+        <h1>作品</h1>
+      </router-link>
     </div>
     <router-view class="port"></router-view>
     <div class="contact">
@@ -78,6 +81,8 @@ export default {
 
   .tab {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     width: 50%;
     min-width: 200px;
     max-width: 400px;
@@ -85,86 +90,59 @@ export default {
 
     .tab-item {
       position: relative;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
       height: 70px;
-      width: 33.3%;
+      width: 70px;
+      text-align: center;
+      background-color: #eee;
+      font-size: 14px;
       flex: 1;
+      smooth-top-angle(10px);
+      transition: 0.7s;
 
       @media screen and (max-width: 500px) {
         width: 50px;
         height: 50px;
       }
 
-      &>a {
-        position: relative;
-        display: block;
-        height: 100%;
-        color: black;
-        text-align: center;
-        smooth-top-angle(10px);
-        box-sizing: border-box;
-        color: white;
-        background-color: $subOrange;
-        background-repeat: no-repeat;
-        background-size: 30px;
-        background-position: center;
-
+      &>h1 {
         @media screen and (max-width: 500px) {
-          height: 50px;
+          display: none;
         }
       }
 
-      &:nth-child(1) > a {
-        bg-image('education_w');
-        background-image: url('http://img1.ph.126.net/DsmpEy0pn6_yidTRn8ODAQ==/3219792258693741445.png');
+      &>.iconfont {
+        font-size: 30px;
+        margin: 4px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 120%;
+        background-color: #fff;
+      }
+
+      &:nth-child(1) {
         background-color: $subOrange;
-
-        &:after {
-          content-after('经历');
-
-          @media screen and (max-width: 500px) {
-            content: '';
-          }
-        }
-
-        &.router-link-active {
-          bg-shift('education', 1s);
-        }
       }
 
-      &:nth-child(2) > a {
-        bg-image('skills_w');
-        background-image: url('http://img0.ph.126.net/aYrokBX7ZAX3sLdErNN3ZA==/5717511041970859191.png');
+      &:nth-child(2) {
         background-color: $lightGreen;
-
-        &.router-link-active {
-          bg-shift('skills', 1s);
-        }
-
-        &:after {
-          content-after('技能');
-
-          @media screen and (max-width: 500px) {
-            content: '';
-          }
-        }
       }
 
-      &:nth-child(3) > a {
-        bg-image('projects_w');
-        background-image: url('http://img1.ph.126.net/k6ykzT3JB_oOyq_3bj1jvA==/1896859868153687167.png');
+      &:nth-child(3) {
         background-color: $lightPink;
+      }
 
-        &.router-link-active {
-          bg-shift('projects', 1s);
-        }
-
-        &:after {
-          content-after('作品');
-
-          @media screen and (max-width: 500px) {
-            content: '';
-          }
-        }
+      &.router-link-active {
+        roll-over(0.7s);
+        color: #000;
+        background-color: #fff;
       }
     }
   }
