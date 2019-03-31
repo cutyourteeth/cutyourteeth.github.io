@@ -4,7 +4,7 @@
     <div :class="$style.background" ref="bgItem"></div>
     <!-- image-content -->
     <div :class="$style.imgContent" @change="imageRatio()" v-if="isImage.check">
-      <img :src="isImage.src" :class="$style.image" ref="imageItem">
+      <img :src="isImage.src" class="image" :class="$style.image" ref="imageItem">
     </div>
     <!-- custom-content -->
     <div :class="$style.textContent" v-if="!isImage.check">
@@ -42,26 +42,15 @@ export default {
     }
   },
   methods: {
-    resize () {
-      (this.isImage.ratio > this.screenRatio) ? this.$refs.imageItem.className = 'image imageHorizontal' : this.$refs.imageItem.className = 'image imageVertical'
-    },
     imageRatio () {
       if (this.isImage.check) {
         this.isImage.ratio = this.$refs.imageItem.innerWidth / this.$refs.imageItem.innerHeight
-        this.resize()
+        this.$refs.imageItem.className = (this.isImage.ratio > this.screenRatio) ? 'imageHorizontal' : 'imageVertical'
       }
     }
   },
-  mounted: {
-    // bgGary () {
-    //   this.$refs.bgItem.style.opactiy = (this.darkRate / 10)
-    // }
-  },
   computed: {
-    screenRaito: () => {
-      let ratio = window.innerWidth / window.innerHeight
-      return ratio
-    }
+    screenRaito: () => { return window.innerWidth / window.innerHeight }
   }
 }
 </script>
@@ -93,6 +82,7 @@ export default {
     height: inherit;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 201;
+    animation: none;
   }
 
   .imgContent, .txtContent {

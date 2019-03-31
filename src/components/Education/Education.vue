@@ -1,6 +1,6 @@
 <template>
   <div class="education">
-    <h1 class="title">教育经历</h1>
+    <h1 class="title">Infos</h1>
     <hr>
     <table class="table">
       <tr class="table-row">
@@ -9,22 +9,14 @@
         </td>
         <td class="text">
           <p>
-            <span class="time">2009-2012</span>
-            <br>衢州一中
+            <span class="time"></span>
+            Sorry, this info might not available at this time;
+            <br>
           </p>
-        </td>
-      </tr>
-      <tr class="table-row">
-        <td>
-          <span class="icon_2-book"></span>
-        </td>
-        <td class="text">
-          <span class="time">2012-2016</span>
-          <br>浙江大学城市学院土木工程
         </td>
       </tr>
     </table>
-    <h1 class="title">工作经历</h1>
+    <h1 class="title"></h1>
     <hr>
     <table class="table">
       <tr class="table-row">
@@ -33,18 +25,10 @@
         </td>
         <td class="text">
           <p>
-            <span class="time">2015-2016</span>
-            <br>杭州优辰建筑咨询(BIM建模师)(实习)
+            <span class="time"></span>
+            Sorry, this info might not available at this time;
+            <br>
           </p>
-        </td>
-      </tr>
-      <tr class="table-row">
-        <td>
-          <span class="icon_2-flag"></span>
-        </td>
-        <td class="text">
-          <span class="time">2016-2018</span>
-          <br>浙江耀信(工程审计)
         </td>
       </tr>
     </table>
@@ -92,7 +76,7 @@ export default {
         letter-spacing: 2px;
         font-size: 16px;
         color: rgba(0, 0, 0, 0.7);
-        font-weight 500
+        font-weight: 500;
       }
     }
   }

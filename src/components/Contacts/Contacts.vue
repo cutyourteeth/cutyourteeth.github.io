@@ -3,7 +3,6 @@
     <div class="address" v-if="triggler===1">杭州市西湖区
       <br>上海市嘉定区
     </div>
-    <div class="tel" v-if="triggler===2">+86-13388408288</div>
     <div class="mail" v-if="triggler===3">273964183@qq.com</div>
     <div class="git" v-if="triggler===4">
       <a href="https://cutyourteeth.github.io/dist">Click here</a>

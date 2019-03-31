@@ -1,10 +1,10 @@
 {
   "name": "cutyourteeth",
   "version": "1.0.0",
-  "description": "my own webapp designed by myself code for the future & past",
+  "description": "my own webapp designed by myself, code for the future & past",
   "author": "Caper <qq174028@sina.com>",
   "private": true,
-  "homepage": "cutyourteeth.github.io/portfolio",
+  "homepage": "https://cutyourteeth.github.io/portfolio",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -13,7 +13,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist" 
   },
   "dependencies": {
     "jquery": "^3.3.1",

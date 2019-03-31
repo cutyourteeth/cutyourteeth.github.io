@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <h1 class="title">自我打分</h1>
+    <h1 class="title">Skills</h1>
     <hr>
     <div class="diagrams">
       <div class="diagram">

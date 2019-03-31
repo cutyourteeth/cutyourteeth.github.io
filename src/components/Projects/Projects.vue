@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
-    <h1 class="title">举几个栗子</h1>
-    <p class="info">(本页使用 Vue-cli &amp; Webpack &amp; Stylus 制作)</p>
+    <h1 class="title">Works</h1>
+    <p class="info">(this page built with Vue-cli &amp; Webpack &amp; Stylus )</p>
     <hr>
     <!-- 主要项目框体 -->
     <div class="content-wrapper" v-for="(item,key) in items" :key="key">
@@ -10,12 +10,15 @@
         预览：
         <a
           :href="item.view"
-          class="icon_2-github"
+          class="iconfont icon-github"
         >{{item.view.replace('https://cutyourteeth.github','')}}</a>
       </p>
       <p class="toCode">
         源码：
-        <a :href="item.code" class="icon_2-github">{{item.code.replace('https://github','')}}</a>
+        <a
+          :href="item.code"
+          class="iconfont icon-github"
+        >{{item.code.replace('https://github','')}}</a>
       </p>
       <div class="gallery">
         <img
@@ -47,7 +50,7 @@
       <p class="toCode">
         各个小项目源码合集：
         <a href="https://github.com/cutyourteeth/tinyApps">
-          <span class="icon_2-github"></span>
+          <span class="iconfont icon-github"></span>
         </a>
       </p>
 
@@ -57,7 +60,7 @@
           <p class="toView tinyApps">
             预览：
             <a href="https://cutyourteeth.github.io/jobinterview-test/clock/">
-              <span class="icon_2-github"></span>
+              <span class="iconfont icon-github"></span>
             </a>
           </p>
           <p class="description">简介：用canvas画的动态时钟。每秒更新</p>
@@ -68,7 +71,7 @@
           <p class="toView tinyApps">
             预览：
             <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swiper.html">
-              <span class="icon_2-github"></span>
+              <span class="iconfont icon-github"></span>
             </a>
           </p>
           <p class="description">简介：jQ编写,banner无限循环</p>
@@ -79,7 +82,7 @@
           <p class="toView tinyApps">
             预览：
             <a href="https://cutyourteeth.github.io/tinyApps/keyCodeMap/keyCode.html">
-              <span class="icon_2-github"></span>
+              <span class="iconfont icon-github"></span>
             </a>
           </p>
           <p class="description">简介：查询键盘映射</p>
@@ -90,7 +93,7 @@
           <p class="toView tinyApps">
             预览：
             <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swpier-mobile-oneway.html">
-              <span class="icon_2-github"></span>
+              <span class="iconfont icon-github"></span>
             </a>
           </p>
           <p class="description">简介：数量有限,回弹动画</p>
@@ -113,17 +116,17 @@ export default {
           view: 'https://cutyourteeth.github.io/diary/',
           code: 'https://github.com/cutyourteeth/diary/',
           photos: [{
-            // src: '../../asstets/screenshots/d1.png'
-            src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rpfyetj20af0ijmyn.jpg'
+            src: '/static/images/screenshots/d1.png'
+            // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rpfyetj20af0ijmyn.jpg'
           }, {
-            // src: '../../asstets/screenshots/d2.png'
-            src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rnmoavj20af0ijjtp.jpg'
+            src: '/static/images/screenshots/d2.png'
+            // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rnmoavj20af0ijjtp.jpg'
           }, {
-            // src: '../../asstets/screenshots/d3.png'
-            src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4rmwewnj20af0ijac5.jpg'
+            src: '/static/images/screenshots/d3.png'
+            // src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4rmwewnj20af0ijac5.jpg'
           }, {
-            // src: '../../asstets/screenshots/d4.png'
-            src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlypqij20ac0iidkk.jpg'
+            src: '/static/images/screenshots/d4.png'
+            // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlypqij20ac0iidkk.jpg'
           }
           ],
           description: '原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;',
@@ -139,11 +142,14 @@ export default {
           view: 'https://cutyourteeth.github.io/JDFinance/dist',
           code: 'https://github.com/cutyourteeth/JDFinance',
           photos: [{
-            src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
+            src: '/static/images/screenshots/jd1.png'
+            // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
           }, {
-            src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
+            src: '/static/images/screenshots/jd2.png'
+            // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
           }, {
-            src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            src: '/static/images/screenshots/jd3.png'
+            // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
           }
           ],
           description: '利用vue框架，仿照京东金融的app所做的webapp界面；',
@@ -160,9 +166,11 @@ export default {
           code: 'https://github.com/cutyourteeth/ele-webapp/',
           photos: [
             {
-              src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlk8e1j20ah0ihdj4.jpg'
+              src: '/static/images/screenshots/ele1.png'
+              // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlk8e1j20ah0ihdj4.jpg'
             }, {
-              src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rf1z9mj20a90ign00.jpg'
+              src: '/static/images/screenshots/ele2.png'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rf1z9mj20a90ign00.jpg'
             }
           ],
           description: '模仿饿了么界面开发的webapp；',
@@ -178,10 +186,12 @@ export default {
           code: 'https://github.com/cutyourteeth/jobinterview-test/calendar/',
           photos: [
             {
-              src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rgzst4j20af0ijjrs.jpg'
+              src: '/static/images/screenshots/cal1.png'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rgzst4j20af0ijjrs.jpg'
             },
             {
-              src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4riwgvmj20ac0ig0t5.jpg'
+              src: '/static/images/screenshots/cal2.png'
+              // src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4riwgvmj20ac0ig0t5.jpg'
             }
           ],
           description: '这份项目是一次求职测试题目',
@@ -197,10 +207,12 @@ export default {
           code: 'https://github.com/cutyourteeth/ease-timer',
           photos: [
             {
-              src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rn8xs4j20b40jm0t3.jpg'
+              src: '/static/images/screenshots/res1.png'
+              // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rn8xs4j20b40jm0t3.jpg'
             },
             {
-              src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rfmwvuj20b00jm3yv.jpg'
+              src: '/static/images/screenshots/res2.png'
+              // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rfmwvuj20b00jm3yv.jpg'
             }
           ],
           description: '健身放松计时器',
@@ -215,7 +227,7 @@ export default {
           view: 'https://cutyourteeth.github.io/tinyApps/todolist/dist/',
           code: 'https://github.com/cutyourteeth/tinyApps/todolist',
           photos: [
-            { src: '//img1.ph.126.net/FgVfszYn4KvMrByE77Fbfg==/3260887605293581786.png' }
+            { src: '/static/images/screenshots/todo.png' }
           ],
           description: '计划清单 webapp；',
           devtool: 'Vue Stylus;',
@@ -284,7 +296,7 @@ export default {
     color: #999;
   }
 
-  .icon_2-github {
+  .iconfont icon-github {
     color: $lightPink;
     font-size: 20px;
 
@@ -296,9 +308,9 @@ export default {
   .content-wrapper {
     font-size: 16px;
     margin-bottom: 3em;
-    background-color: rgba(240, 240, 240, 0.36);
+    box-shadow: 0 0 5px 2px rgb(225, 225, 225);
     border-radius: 5px;
-    padding: 0 2px;
+    padding: 0 25px 15px;
 
     &>h2 {
       font-weight: 500;

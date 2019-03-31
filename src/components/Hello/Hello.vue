@@ -5,24 +5,25 @@
     <div class="tab">
       <router-link class="tab-item" to="/education">
         <div class="iconfont icon-hat"></div>
-        <h1>经历</h1>
+        <h1>Past</h1>
       </router-link>
       <router-link class="tab-item" to="/skills">
         <div class="iconfont icon-skill"></div>
-        <h1>技能</h1>
+        <h1>Techs</h1>
       </router-link>
       <router-link class="tab-item" to="/projects">
         <div class="iconfont icon-code"></div>
-        <h1>作品</h1>
+        <h1>Works</h1>
       </router-link>
     </div>
+    <!-- main-content -->
     <router-view class="port"></router-view>
+
     <div class="contact">
-      <a class="icon-home" @click="triggler=1"></a>
-      <a class="icon-phone" @click="triggler=2"></a>
-      <a class="icon-envelop" @click="triggler=3"></a>
-      <a class="icon-earth" @click="triggler=4"></a>
-      <a class="icon-bubbles3" @click="triggler=5"></a>
+      <a class="iconfont icon-home" @click="triggler=1"></a>
+      <a class="iconfont icon-mail" @click="triggler=3"></a>
+      <a class="iconfont icon-globe" @click="triggler=4"></a>
+      <a class="iconfont icon-chat" @click="triggler=5"></a>
     </div>
     <v-contacts :triggler="triggler"></v-contacts>
   </div>
@@ -81,12 +82,13 @@ export default {
 
   .tab {
     display: flex;
+    position: relative;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     width: 50%;
     min-width: 200px;
     max-width: 400px;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
 
     .tab-item {
       position: relative;
@@ -94,7 +96,9 @@ export default {
       flex-flow: column;
       justify-content: center;
       align-items: center;
+      top: 20px;
       height: 70px;
+      padding-bottom: 20px;
       width: 70px;
       text-align: center;
       background-color: #eee;
@@ -124,7 +128,6 @@ export default {
         position: absolute;
         width: 100%;
         height: 120%;
-        background-color: #fff;
       }
 
       &:nth-child(1) {
@@ -151,10 +154,10 @@ export default {
     display: block;
     position: relative;
     flex: 1;
-    width-content(95%, 0, 50px);
+    width-content(90%, 0, 50px);
     border: none;
     border-radius: 10px;
-    padding: 10px 10px 50px;
+    padding: 10px 20px 50px;
     font-size: 14px;
     line-height: 22px;
     background-color: rgba(255, 255, 255, 1);
