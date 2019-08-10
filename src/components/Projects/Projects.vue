@@ -114,6 +114,128 @@ export default {
     return {
       items: [
         {
+          title: '企业架构管理日志应用PC端(Vue版本)',
+          view: '',
+          code: '',
+          photos: [
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
+              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            }
+          ],
+          description:
+            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,第二次重构改用了react框架',
+          devtool: 'ReactJS(hooks) Antd VueJS Element-UI',
+          character:
+            '1、充分发挥react组件化,受控组件的思维; 切合antd的组件设计, styled-component定制组件, 保持一致性. 2、多次重构，也得益于react的思维，组件分组调理清晰，理解这样的思维成本不大，且学习后能和先前代码组织保持一致。3、可读性：我负责的代码区域最大能力保证代码的易读 4、丰富的类型检查：我负责的区域类型检查比较严格',
+          advance: '日志汇报可以单独成为一个富文本记录app',
+          future: '独立出日志app,自己可以制作一个多端的应用',
+          caution: ''
+        },
+                {
+          title: '企业架构管理日志应用PC端(React版本)',
+          view: '',
+          code: '',
+          photos: [
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
+              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            }
+          ],
+          description:
+            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,第二次重构改用了react框架',
+          devtool: 'ReactJS(hooks) Antd VueJS Element-UI',
+          character:
+            '1、充分发挥react组件化,受控组件的思维; 切合antd的组件设计, styled-component定制组件, 保持一致性. 2、多次重构，也得益于react的思维，组件分组调理清晰，理解这样的思维成本不大，且学习后能和先前代码组织保持一致。3、可读性：我负责的代码区域最大能力保证代码的易读 4、丰富的类型检查：我负责的区域类型检查比较严格',
+          advance: '日志汇报可以单独成为一个富文本记录app',
+          future: '独立出日志app,自己可以制作一个多端的应用',
+          caution: ''
+        },
+                {
+          title: '企业架构管理日志应用(小程序)',
+          view: '',
+          code: '',
+          photos: [
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
+              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            }
+          ],
+          description:
+            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,第二次重构改用了react框架',
+          devtool: 'ReactJS(hooks) Antd VueJS Element-UI',
+          character:
+            '1、充分发挥react组件化,受控组件的思维; 切合antd的组件设计, styled-component定制组件, 保持一致性. 2、多次重构，也得益于react的思维，组件分组调理清晰，理解这样的思维成本不大，且学习后能和先前代码组织保持一致。3、可读性：我负责的代码区域最大能力保证代码的易读 4、丰富的类型检查：我负责的区域类型检查比较严格',
+          advance: '日志汇报可以单独成为一个富文本记录app',
+          future: '独立出日志app,自己可以制作一个多端的应用',
+          caution: ''
+        },
+        {
+          title: '企业日志PC服务端(nestjs)',
+          view: '',
+          code: '',
+          photos: [
+            {
+              src: '/aboutme/static/images/screenshots/nest1.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/nest2.jpg'
+              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/nest3.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            },
+            {
+              src: '/aboutme/static/images/screenshots/nest4.jpg'
+              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
+            }
+          ],
+          description: '',
+          devtool: 'NestJS MySQL',
+          character: '',
+          advance: '',
+          future: '',
+          caution: ''
+        },
+        {
           title: '京东金融 webapp',
           view: 'https://dimshades.github.io/JDFinance/dist',
           code: 'https://github.com/dimshades/JDFinance',
@@ -200,63 +322,63 @@ export default {
           advance: '方便轻巧，逻辑简单，代码量少；',
           future: '可拓展处很多，例如分类，提醒，警告等模块；',
           caution: ''
-        },
-        {
-          title: 'Ark-Tica 日记App',
-          view: 'https://dimshades.github.io/diary/',
-          code: 'https://github.com/dimshades/diary/',
-          photos: [
-            {
-              src: '/aboutme/static/images/screenshots/d1.png'
-              // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rpfyetj20af0ijmyn.jpg'
-            },
-            {
-              src: '/aboutme/static/images/screenshots/d2.png'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rnmoavj20af0ijjtp.jpg'
-            },
-            {
-              src: '/aboutme/static/images/screenshots/d3.png'
-              // src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4rmwewnj20af0ijac5.jpg'
-            },
-            {
-              src: '/aboutme/static/images/screenshots/d4.png'
-              // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlypqij20ac0iidkk.jpg'
-            }
-          ],
-          description:
-            '原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;',
-          devtool: 'JavaScript Stylus;',
-          character:
-            '1、用JS实现indexedDB数据库操作，相比Cookies和localStorage，数据结构化，运用后端数据库逻辑；\n2、完整的日记的写入、输出、分类、筛选、修改、删除、添加图片、添加多图功能；\n3、响应式布局，对pc和移动端分别优化（虽然没下一个项目的解决方案完美）；\n4、自制modal框体、toast提示浮层、各个组件动画（滑动、淡入、淡出等）、改造美化了Input单选框；\n5、首页背景css轮播；6、日记展示区的图片可依据数量不同而显示不同布局、单张图片时将采用大图框的显示布局、同时根据每张图片长宽比实现最好的展示方式；\n7、canvas气泡、水母背景（模仿自codepen的一个项目），以及自制了一个算数小游戏；',
-          advance:
-            '移动端PC端都试用（非过低版本的浏览器）、无需服务端，本地使用；',
-          future:
-            '由于本项目编写时间较早，彼时对于js的认知稍浅，现在回看可改进空间比较大，将来会在简化逻辑、丰富业务、压缩代码上下功夫；',
-          caution:
-            '注意：本项目还在拓展维护，所有依赖资源储存在github，浏览时加载可能较慢；可使用移动端高版本浏览器；'
-        },
-        {
-          title: '饿了么 webapp',
-          view: 'https://dimshades.github.io/ele-webapp/dist/',
-          code: 'https://github.com/dimshades/ele-webapp/',
-          photos: [
-            {
-              src: '/aboutme/static/images/screenshots/ele1.png'
-              // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlk8e1j20ah0ihdj4.jpg'
-            },
-            {
-              src: '/aboutme/static/images/screenshots/ele2.png'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rf1z9mj20a90ign00.jpg'
-            }
-          ],
-          description: '模仿饿了么界面开发的webapp；',
-          devtool: 'Vue-cli & Webpack & Stylus 以及其他插件；',
-          character:
-            '完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载.分类，商家信息，评分)；',
-          advance: '便于维护的组件化，根据计算获得设备像素比，调整图标大小；',
-          future: '完善商家页面，修复vue迭代导致的一些遗留问题；',
-          caution: '注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解；'
         }
+        // {
+        //   title: 'Ark-Tica 日记App',
+        //   view: 'https://dimshades.github.io/diary/',
+        //   code: 'https://github.com/dimshades/diary/',
+        //   photos: [
+        //     {
+        //       src: '/aboutme/static/images/screenshots/d1.png'
+        //       // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rpfyetj20af0ijmyn.jpg'
+        //     },
+        //     {
+        //       src: '/aboutme/static/images/screenshots/d2.png'
+        //       // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rnmoavj20af0ijjtp.jpg'
+        //     },
+        //     {
+        //       src: '/aboutme/static/images/screenshots/d3.png'
+        //       // src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g1l4rmwewnj20af0ijac5.jpg'
+        //     },
+        //     {
+        //       src: '/aboutme/static/images/screenshots/d4.png'
+        //       // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlypqij20ac0iidkk.jpg'
+        //     }
+        //   ],
+        //   description:
+        //     '原生Javascript开发，本地存储的日记本webapp。未用任何js库，stylus预编译css，IndexedDB数据库实现本地存储;',
+        //   devtool: 'JavaScript Stylus;',
+        //   character:
+        //     '1、用JS实现indexedDB数据库操作，相比Cookies和localStorage，数据结构化，运用后端数据库逻辑；\n2、完整的日记的写入、输出、分类、筛选、修改、删除、添加图片、添加多图功能；\n3、响应式布局，对pc和移动端分别优化（虽然没下一个项目的解决方案完美）；\n4、自制modal框体、toast提示浮层、各个组件动画（滑动、淡入、淡出等）、改造美化了Input单选框；\n5、首页背景css轮播；6、日记展示区的图片可依据数量不同而显示不同布局、单张图片时将采用大图框的显示布局、同时根据每张图片长宽比实现最好的展示方式；\n7、canvas气泡、水母背景（模仿自codepen的一个项目），以及自制了一个算数小游戏；',
+        //   advance:
+        //     '移动端PC端都试用（非过低版本的浏览器）、无需服务端，本地使用；',
+        //   future:
+        //     '由于本项目编写时间较早，彼时对于js的认知稍浅，现在回看可改进空间比较大，将来会在简化逻辑、丰富业务、压缩代码上下功夫；',
+        //   caution:
+        //     '注意：本项目还在拓展维护，所有依赖资源储存在github，浏览时加载可能较慢；可使用移动端高版本浏览器；'
+        // },
+        // {
+        //   title: '饿了么 webapp',
+        //   view: 'https://dimshades.github.io/ele-webapp/dist/',
+        //   code: 'https://github.com/dimshades/ele-webapp/',
+        //   photos: [
+        //     {
+        //       src: '/aboutme/static/images/screenshots/ele1.png'
+        //       // src: '//wx2.sinaimg.cn/mw690/467fdbd3ly1g1l4rlk8e1j20ah0ihdj4.jpg'
+        //     },
+        //     {
+        //       src: '/aboutme/static/images/screenshots/ele2.png'
+        //       // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rf1z9mj20a90ign00.jpg'
+        //     }
+        //   ],
+        //   description: '模仿饿了么界面开发的webapp；',
+        //   devtool: 'Vue-cli & Webpack & Stylus 以及其他插件；',
+        //   character:
+        //     '完成了各个部件，由vue-resource完成ajax数据请求，vue-router来引导每个版块。基本实现了饿了么app基本的购买界面的基本功能，(查看商品列表，列表动态加载.分类，商家信息，评分)；',
+        //   advance: '便于维护的组件化，根据计算获得设备像素比，调整图标大小；',
+        //   future: '完善商家页面，修复vue迭代导致的一些遗留问题；',
+        //   caution: '注意：商品详情和商家信息还在重构中,存在一些问题敬请谅解；'
+        // }
       ],
       isImage: {
         check: true,
