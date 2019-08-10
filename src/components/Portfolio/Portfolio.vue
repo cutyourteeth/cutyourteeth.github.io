@@ -65,7 +65,7 @@ export default {
     margin: 0 auto 20px auto;
     width: 100px;
     height: 100px;
-    bg-image('avatar');
+    background-image: url('/aboutme/static/images/image/avatar.png');
     background-size: 130px;
     background-position: center;
     border-radius: 50%;
