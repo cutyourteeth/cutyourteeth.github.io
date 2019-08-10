@@ -144,7 +144,7 @@ export default {
           future: '独立出日志app,自己可以制作一个多端的应用',
           caution: ''
         },
-                {
+        {
           title: '企业架构管理日志应用PC端(React版本)',
           view: '',
           code: '',
@@ -175,7 +175,7 @@ export default {
           future: '独立出日志app,自己可以制作一个多端的应用',
           caution: ''
         },
-                {
+        {
           title: '企业架构管理日志应用(小程序)',
           view: '',
           code: '',
