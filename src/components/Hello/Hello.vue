@@ -34,20 +34,18 @@ import Portfolio from '../Portfolio/Portfolio'
 import Contacts from '../Contacts/Contacts'
 
 export default {
-  props: {
-  },
+  props: {},
   data () {
     return {
-      'triggler': 0,
-      'color': {
-        'subOrange': 'rgba(255, 152, 0, 1)',
-        'lightGreen': 'rgba(52, 214, 164, 1)',
-        'lightPink': 'rgba(245, 95, 171, 1)'
+      triggler: 0,
+      color: {
+        subOrange: 'rgba(255, 152, 0, 1)',
+        lightGreen: 'rgba(52, 214, 164, 1)',
+        lightPink: 'rgba(245, 95, 171, 1)'
       }
     }
   },
-  methods: {
-  },
+  methods: {},
   components: {
     'v-portfolio': Portfolio,
     'v-contacts': Contacts
