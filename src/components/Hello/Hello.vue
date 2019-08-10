@@ -1,12 +1,8 @@
 <template>
   <div class="box">
-    <a href="https://cutyourteeth.github.io/handnote/web" class="note">Notes→</a>
+    <a href="https://dimshades.github.io/handnote/web" class="note">Notes→</a>
     <v-portfolio></v-portfolio>
     <div class="tab">
-      <router-link class="tab-item" to="/education">
-        <div class="iconfont icon-hat"></div>
-        <h1>Past</h1>
-      </router-link>
       <router-link class="tab-item" to="/skills">
         <div class="iconfont icon-skill"></div>
         <h1>Techs</h1>
@@ -15,17 +11,21 @@
         <div class="iconfont icon-code"></div>
         <h1>Works</h1>
       </router-link>
+      <router-link class="tab-item" to="/education">
+        <div class="iconfont icon-hat"></div>
+        <h1>Past</h1>
+      </router-link>
     </div>
     <!-- main-content -->
     <router-view class="port"></router-view>
 
     <div class="contact">
-      <a class="iconfont icon-home" @click="triggler=1"></a>
-      <a class="iconfont icon-mail" @click="triggler=3"></a>
-      <a class="iconfont icon-globe" @click="triggler=4"></a>
-      <a class="iconfont icon-chat" @click="triggler=5"></a>
+      <a class="iconfont icon-home" @click="trigger=1"></a>
+      <a class="iconfont icon-mail" @click="trigger=3"></a>
+      <a class="iconfont icon-globe" @click="trigger=4"></a>
+      <a class="iconfont icon-chat" @click="trigger=5"></a>
     </div>
-    <v-contacts :triggler="triggler"></v-contacts>
+    <v-contacts :trigger="trigger"></v-contacts>
   </div>
 </template>
 
@@ -35,9 +35,9 @@ import Contacts from '../Contacts/Contacts'
 
 export default {
   props: {},
-  data () {
+  data() {
     return {
-      triggler: 0,
+      trigger: 0,
       color: {
         subOrange: 'rgba(255, 152, 0, 1)',
         lightGreen: 'rgba(52, 214, 164, 1)',

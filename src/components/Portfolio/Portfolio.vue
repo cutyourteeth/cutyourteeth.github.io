@@ -1,18 +1,30 @@
 <template>
   <div class="portfolio">
-    <span class="avatar"></span>
-    <h2 class="name" :name="name">徐&nbsp;尧</h2>
-    <h3 class="subname" :name="name">Caper</h3>
-    <h3 class="subtitle">A web front-end engineer</h3>
-    <div class="depoly">
+    <div class="avatar"></div>
+    <h2 class="name" :name="name">徐尧-Caper</h2>
+    <h3 class="sub-name" :name="name">Web Developer</h3>
+    <h3 class="subtitle">Technics: TS / React / Vue / Nest(Express)</h3>
+    <div class="detail">
       <div class="fold icon-keyboard_arrow_down" @click="fold()"></div>
-      <p class="intro" v-if="isShown">
-        <span>&emsp;&emsp;1.&nbsp;A web front-end engineer, a keep studying one</span>
-        <span>&emsp;&emsp;2.&nbsp;Loves the Internet, grown with domastic web era</span>
-        <span>&emsp;&emsp;3.&nbsp;Loves video games too, but not quite good at it</span>
-        <span>&emsp;&emsp;4.&nbsp;And now doing research on nomatter web, hard drives, or apps.</span>
-        <span>&emsp;&emsp;4.&nbsp;Sharing all the technical infos with anyone who is willing too.</span>
-      </p>
+      <div class="intro" v-if="isShown">
+        <p>Introducing myself:</p>
+        <p>
+          &emsp;
+          At early 2018, I'm a front-end developer, used to programing with vanilla Javascript and VueJS.
+          <br />&emsp;And now, I'm also a full-stack developer, I'm fall in love with Typescript.
+          <br />&emsp;My technics also expanded, ReactJS, NestJS(a Express framework), typeORM(a Javascript to SQL compile framework)
+          <br />&emsp;Work with NodeJS I was able to build service-able site and build my own MySQL database
+        </p>
+        <hr />
+        <p>Characters:</p>
+        <p>
+          1.Passion in coding
+          <br />2.Always dig in code's secrets
+          <br />3.Keep on studying new technics
+          <br />4.Love to do research on no matter web, hard drives, or apps
+          <br />5.Sharing with anyone who is willing to share
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -24,13 +36,13 @@ export default {
       type: Object
     }
   },
-  data () {
+  data() {
     return {
-      isShown: false
+      isShown: true
     }
   },
   methods: {
-    fold () {
+    fold() {
       this.isShown = !this.isShown
     }
   }
@@ -57,6 +69,7 @@ export default {
     background-size: 130px;
     background-position: center;
     border-radius: 50%;
+    display: inline-table;
   }
 
   .name {
@@ -66,7 +79,7 @@ export default {
     font-weight: 700;
   }
 
-  .subname {
+  .sub-name {
     flex: 1;
     font-size: 20px;
     line-height: 24px;
@@ -81,7 +94,7 @@ export default {
     line-height: 30px;
   }
 
-  .depoly {
+  .detail {
     text-align: center;
     display: block;
 
@@ -104,14 +117,13 @@ export default {
     width-content(90%, 0, 0);
     text-align: left;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.7;
     run-over(0.5s);
 
-    &>span {
-      display: block;
-      margin-top: 3px;
-      // text-indent: 2em;
+    &>p {
+      padding-top: 3px;
+      font-size: 18px;
     }
   }
 }

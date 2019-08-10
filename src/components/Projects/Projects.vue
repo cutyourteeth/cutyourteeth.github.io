@@ -4,6 +4,8 @@
     <p class="info">(this page built with Vue-cli &amp; Webpack &amp; Stylus )</p>
     <hr />
     <!-- 主要项目框体 -->
+    <p class="info">下列项目仅当示例, 部分已经 重新开发 / 脱离维护</p>
+    <p>&nbsp;</p>
     <div class="content-wrapper" v-for="(item,key) in items" :key="key">
       <h2>{{key+1}}. {{item.title}}</h2>
       <p class="toView">
@@ -11,7 +13,7 @@
         <a
           :href="item.view"
           class="iconfont icon-github"
-        >{{item.view.replace('https://cutyourteeth.github','')}}</a>
+        >{{item.view.replace('https://dimshades.github','')}}</a>
       </p>
       <p class="toCode">
         源码：
@@ -49,7 +51,7 @@
       <h2>自制小模块/工具/插件</h2>
       <p class="toCode">
         各个小项目源码合集：
-        <a href="https://github.com/cutyourteeth/tinyApps">
+        <a href="https://github.com/dimshades/tinyApps">
           <span class="iconfont icon-github"></span>
         </a>
       </p>
@@ -59,7 +61,7 @@
           <h4 class="tinyTitle">(1).时钟</h4>
           <p class="toView tinyApps">
             预览：
-            <a href="https://cutyourteeth.github.io/jobinterview-test/clock/">
+            <a href="https://dimshades.github.io/jobinterview-test/clock/">
               <span class="iconfont icon-github"></span>
             </a>
           </p>
@@ -70,7 +72,7 @@
           <h4 class="tinyTitle">(2).pc端滑动banner</h4>
           <p class="toView tinyApps">
             预览：
-            <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swiper.html">
+            <a href="https://dimshades.github.io/tinyApps/Swiper/swiper.html">
               <span class="iconfont icon-github"></span>
             </a>
           </p>
@@ -81,7 +83,7 @@
           <h4 class="tinyTitle">(3).keyCodeMap</h4>
           <p class="toView tinyApps">
             预览：
-            <a href="https://cutyourteeth.github.io/tinyApps/keyCodeMap/keyCode.html">
+            <a href="https://dimshades.github.io/tinyApps/keyCodeMap/keyCode.html">
               <span class="iconfont icon-github"></span>
             </a>
           </p>
@@ -92,7 +94,7 @@
           <h4 class="tinyTitle">(4).移动端滑动banner</h4>
           <p class="toView tinyApps">
             预览：
-            <a href="https://cutyourteeth.github.io/tinyApps/Swiper/swpier-mobile-oneway.html">
+            <a href="https://dimshades.github.io/tinyApps/Swiper/swpier-mobile-oneway.html">
               <span class="iconfont icon-github"></span>
             </a>
           </p>
@@ -113,8 +115,8 @@ export default {
       items: [
         {
           title: 'Ark-Tica 日记App',
-          view: 'https://cutyourteeth.github.io/diary/',
-          code: 'https://github.com/cutyourteeth/diary/',
+          view: 'https://dimshades.github.io/diary/',
+          code: 'https://github.com/dimshades/diary/',
           photos: [
             {
               src: '/static/images/screenshots/d1.png'
@@ -148,8 +150,8 @@ export default {
 
         {
           title: '京东金融 webapp',
-          view: 'https://cutyourteeth.github.io/JDFinance/dist',
-          code: 'https://github.com/cutyourteeth/JDFinance',
+          view: 'https://dimshades.github.io/JDFinance/dist',
+          code: 'https://github.com/dimshades/JDFinance',
           photos: [
             {
               src: '/static/images/screenshots/jd1.png'
@@ -178,8 +180,8 @@ export default {
 
         {
           title: '饿了么 webapp',
-          view: 'https://cutyourteeth.github.io/ele-webapp/dist/',
-          code: 'https://github.com/cutyourteeth/ele-webapp/',
+          view: 'https://dimshades.github.io/ele-webapp/dist/',
+          code: 'https://github.com/dimshades/ele-webapp/',
           photos: [
             {
               src: '/static/images/screenshots/ele1.png'
@@ -200,9 +202,8 @@ export default {
         },
         {
           title: 'Calendar 任务发布日历',
-          view:
-            'https://cutyourteeth.github.io/jobinterview-test/calendar/dist',
-          code: 'https://github.com/cutyourteeth/jobinterview-test/calendar/',
+          view: 'https://dimshades.github.io/jobinterview-test/calendar/dist',
+          code: 'https://github.com/dimshades/jobinterview-test/calendar/',
           photos: [
             {
               src: '/static/images/screenshots/cal1.png'
@@ -224,8 +225,8 @@ export default {
         },
         {
           title: 'Ease-Timer',
-          view: 'https://cutyourteeth.github.io/ease-timer/www/',
-          code: 'https://github.com/cutyourteeth/ease-timer',
+          view: 'https://dimshades.github.io/ease-timer/www/',
+          code: 'https://github.com/dimshades/ease-timer',
           photos: [
             {
               src: '/static/images/screenshots/res1.png'
@@ -246,8 +247,8 @@ export default {
         },
         {
           title: '计划表 tiny-todo-list',
-          view: 'https://cutyourteeth.github.io/tinyApps/todolist/dist/',
-          code: 'https://github.com/cutyourteeth/tinyApps/todolist',
+          view: 'https://dimshades.github.io/tinyApps/todolist/dist/',
+          code: 'https://github.com/dimshades/tinyApps/todolist',
           photos: [{ src: '/static/images/screenshots/todo.png' }],
           description: '计划清单 webapp；',
           devtool: 'Vue Stylus;',

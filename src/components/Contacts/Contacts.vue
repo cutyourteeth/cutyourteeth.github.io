@@ -1,18 +1,21 @@
 <template>
   <div class="contacts">
-    <div class="address" v-if="triggler===1">杭州市西湖区
-      <br>上海市嘉定区
+    <div class="address" v-if="trigger===1">
+      杭州市西湖区
+      <br />上海市嘉定区
     </div>
-    <div class="mail" v-if="triggler===3">273964183@qq.com</div>
-    <div class="git" v-if="triggler===4">
-      <a href="https://cutyourteeth.github.io/dist">Click here</a>
+    <div class="mail" v-if="trigger===3">273964183@qq.com</div>
+    <div class="git" v-if="trigger===4">
+      <a href="https://dimshades.github.io/dist">Click here</a>
     </div>
-    <div class="social" v-if="triggler===5">
-      <p>Wechat:
-        <br>StrawberryAvalanche
+    <div class="social" v-if="trigger===5">
+      <p>
+        WeChat:
+        <br />StrawberryAvalanche
       </p>
-      <p>QQ:
-        <br>273964183
+      <p>
+        QQ:
+        <br />273964183
       </p>
     </div>
   </div>
@@ -21,13 +24,12 @@
 <script>
 export default {
   props: {
-    triggler: {
+    trigger: {
       type: Number
     }
   },
-  data () {
-    return {
-    }
+  data() {
+    return {}
   }
 }
 </script>
