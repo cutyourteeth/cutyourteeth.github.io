@@ -120,19 +120,15 @@ export default {
           photos: [
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
-              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
             }
           ],
           description:
@@ -151,19 +147,15 @@ export default {
           photos: [
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
-              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
             }
           ],
           description:
@@ -213,19 +205,15 @@ export default {
           photos: [
             {
               src: '/aboutme/static/images/screenshots/nest1.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rkhbhcj20ae0imwhi.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/nest2.jpg'
-              // src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g1l4rkt063j20ad0ijabt.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/nest3.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
             },
             {
               src: '/aboutme/static/images/screenshots/nest4.jpg'
-              // src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g1l4rjrqj2j20ad0iiacm.jpg'
             }
           ],
           description: '',
