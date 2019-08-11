@@ -118,19 +118,19 @@ export default {
           code: '(暂不提供)',
           photos: [
             {
-              src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g5vs0scd3ej20cn0nemxc.jpg'
+              src: 'http://wx1.sinaimg.cn/mw690/467fdbd3ly1g5vs0scd3ej20cn0nemxc.jpg'
             },
             {
-              src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g5vs0ugej7j20cn0neaa5.jpg'
+              src: 'http://wx3.sinaimg.cn/mw690/467fdbd3ly1g5vs0ugej7j20cn0neaa5.jpg'
             },
             {
-              src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g5vs0tqknbj20cn0negln.jpg'
+              src: 'http://wx4.sinaimg.cn/mw690/467fdbd3ly1g5vs0tqknbj20cn0negln.jpg'
             },
             {
-              src: '//wx3.sinaimg.cn/mw690/467fdbd3ly1g5vs0temfrj20cn0nemx8.jpg'
+              src: 'http://wx3.sinaimg.cn/mw690/467fdbd3ly1g5vs0temfrj20cn0nemx8.jpg'
             },
             {
-              src: '//wx4.sinaimg.cn/mw690/467fdbd3ly1g5vs0szywmj20cn0ne74a.jpg'
+              src: 'http://wx4.sinaimg.cn/mw690/467fdbd3ly1g5vs0szywmj20cn0ne74a.jpg'
             }
           ],
           description:
@@ -149,25 +149,25 @@ export default {
           code: '(暂不提供)',
           photos: [
             {
-              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrezgaauj20tj0j80t2.jpg'
+              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vrezgaauj20tj0j80t2.jpg'
             },
             {
-              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrez2mk7j20tb0jc3yt.jpg'
+              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vrez2mk7j20tb0jc3yt.jpg'
             },
             {
-              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vreylapgj20sx0px0u6.jpg'
+              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vreylapgj20sx0px0u6.jpg'
             },
             {
-              src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vrey7n0fj20so0pndgp.jpg'
+              src: 'http://wx3.sinaimg.cn/large/467fdbd3ly1g5vrey7n0fj20so0pndgp.jpg'
             },
             {
-              src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vrgmnwcpj20wp0jxab7.jpg'
+              src: 'http://wx3.sinaimg.cn/large/467fdbd3ly1g5vrgmnwcpj20wp0jxab7.jpg'
             },
             {
-              src: '//wx1.sinaimg.cn/large/467fdbd3ly1g5vrgm3hbnj20wk0kc3zn.jpg'
+              src: 'http://wx1.sinaimg.cn/large/467fdbd3ly1g5vrgm3hbnj20wk0kc3zn.jpg'
             },
             {
-              src: '//wx4.sinaimg.cn/large/467fdbd3ly1g5vrglljh0j20wq0kc754.jpg'
+              src: 'http://wx4.sinaimg.cn/large/467fdbd3ly1g5vrglljh0j20wq0kc754.jpg'
             }
           ],
           description:
@@ -185,16 +185,16 @@ export default {
           code: '(暂不提供)',
           photos: [
             {
-              src: '//wx4.sinaimg.cn/large/467fdbd3ly1g5vrf1e3w3j216f0rxwl8.jpg'
+              src: 'http://wx4.sinaimg.cn/large/467fdbd3ly1g5vrf1e3w3j216f0rxwl8.jpg'
             },
             {
-              src: '//wx4.sinaimg.cn/large/467fdbd3ly1g5vrf0goqej20le0o5tai.jpg'
+              src: 'http://wx4.sinaimg.cn/large/467fdbd3ly1g5vrf0goqej20le0o5tai.jpg'
             },
             {
-              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrf02fjoj218g0p0q7d.jpg'
+              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vrf02fjoj218g0p0q7d.jpg'
             },
             {
-              src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vtcsjtzuj20sm0jv3zq.jpg'
+              src: 'http://wx3.sinaimg.cn/large/467fdbd3ly1g5vtcsjtzuj20sm0jv3zq.jpg'
             }
           ],
           description: 'nestjs',
