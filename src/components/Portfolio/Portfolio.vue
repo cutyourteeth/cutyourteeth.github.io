@@ -2,28 +2,42 @@
   <div class="portfolio">
     <div class="avatar"></div>
     <h2 class="name" :name="name">徐尧-Caper</h2>
-    <h3 class="sub-name" :name="name">Web Developer</h3>
-    <h3 class="subtitle">Technics: TS / React / Vue / Nest(Express)</h3>
+    <h3 class="sub-name" :name="name">Web开发(前端/node)</h3>
+    <h3 class="subtitle">主要技术栈: React(TS) / Vue / Nest(Express)</h3>
     <div class="detail">
       <div class="fold icon-keyboard_arrow_down" @click="fold()"></div>
       <div class="intro" v-if="isShown">
-        <p>Introducing myself:</p>
-        <p>
-          &emsp;
-          At early 2018, I'm a front-end developer, used to programing with vanilla Javascript and VueJS.
-          <br />&emsp;And now, I'm also a full-stack developer, I'm fall in love with Typescript.
-          <br />&emsp;My technics also expanded, ReactJS, NestJS(a Express framework), typeORM(a Javascript to SQL compile framework)
-          <br />&emsp;Work with NodeJS I was able to build service-able site and build my own MySQL database
-        </p>
+        <p>自我介绍:</p>
+        <div>
+          <p class="description">1. 之前：我是一个前端开发者,使用 JavaScript和 VueJS, 自我开发了几个小应用。</p>
+          <p class="description">
+            2. 现在：我爱上了 Typescript（尤其是类型约束）和
+            ReactJS（尤其是hooks），并且使用NestJS开发后端，成为了一个小全栈，时常琢磨数据库和前端性能问题。
+          </p>
+          <p class="description">
+            3. 技术面：短短一年半内我掌握并在工作中使用
+            Typescript、React、Vue、Antd、Element、小程序开发、Nestjs（express框架）、typeORM（SQL映射)等框架或是语言，而且对处理技术上的难题也是比较稳健的，这也得益于善用社区的支持和我的捕获信息的能力
+          </p>
+          <p class="description">
+            4. 编程习惯: 我练出了非常好的代码习惯以及代码洁癖，对代码的命名、结构、易读性；组件的拆分、结构、管理要求较高；
+            此外我热爱重构，无论是我的还是他人的，我认为重构就是我的进化之路。
+          </p>
+          <p class="description">
+            5. 未来：我一直都保持好奇和探索的热情，目前我正在钻研近期热门的 GraphQL来优化的 API, 同样的, 我也在尝试
+            Mongoose,学习无关系的数据库模型。
+          </p>
+        </div>
         <hr />
-        <p>Characters:</p>
-        <p>
-          1.Passion in coding
-          <br />2.Always dig in code's secrets
-          <br />3.Keep on studying new technics
-          <br />4.Love to do research on no matter web, hard drives, or apps
-          <br />5.Sharing with anyone who is willing to share
-        </p>
+        <p>个性:</p>
+        <div>
+          <p style="white-space: pre-line">1. 编程狂热（我很热爱这工作）
+            2. 保持广阔视野， 探索大千世界
+            3. 和善沟通，不怼人，不轻易做出评价
+            4. 独立思考，不卑不亢，沉着处理问题
+            5. 乐于分享，和爱分享的人交流互补，喜欢社区
+            6. 喜欢研究 web，app，智能化硬件，做个酷酷的极客
+          </p>
+        </div>
       </div>
     </div>
   </div>

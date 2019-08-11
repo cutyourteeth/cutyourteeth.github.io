@@ -1,7 +1,6 @@
 <template>
   <div class="projects">
-    <h1 class="title">Works</h1>
-    <p class="info">(this page built with Vue-cli &amp; Webpack &amp; Stylus )</p>
+    <h1 class="title">项目</h1>
     <hr />
     <!-- 主要项目框体 -->
     <!-- <p class="info">下列项目仅当示例, 部分已经 重新开发 / 脱离维护</p> -->
@@ -135,11 +134,12 @@ export default {
             }
           ],
           description:
-            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,该小程序属钉钉小程序平台,和微信小程序开发大同小异 ',
+            '这是个强大复杂的多端应用，小程序部分由我负责带领开发团队，基本是我写的；后来我调入了pc团队联合开发，使用vue和react； 再之后我们放弃了原来的c#后端，我的团队开始使用node(nest)开发新的后端，并投入使用，期望服务的人数量级在千人左右。',
           devtool: 'miniprogram-devtools',
           character:
-            '为了达到产品要求我用了很多方法绕过和很多钉钉开发平台的坑, 打个比方, 底部的tabbar是自写的组件,因为当时开发时,官方框架的底栏作为spa的导航栏体验非常差,不能自定义开关,样式等等.  我很乐意开放这部分的知识库内容,访问:  https://github.com/dimshades/handnote/blob/master/笔记/笔记.小程序.md',
-          advance: '',
+            '该小程序属钉钉小程序平台,和微信小程序开发大同小异，为了达到产品要求我用了很多方法绕过和很多钉钉开发平台的坑, 打个比方, 底部的tabbar是自写的组件,因为当时开发时,官方框架的底栏作为spa的导航栏体验非常差,不能自定义开关,样式等等.  我很乐意开放这部分的知识库内容,访问:  https://github.com/dimshades/handnote/blob/master/笔记/笔记.小程序.md',
+          advance:
+            '企业管理应用， 包括企业组织架构管理， 团队搭建管理， 成员日志汇报， 日志管理、社交(评论点赞)，岗位和人事调动， 日常消息通知， 联系人， 个人名片设置等等丰富功能',
           future: '',
           caution: ''
         },
@@ -171,7 +171,7 @@ export default {
             }
           ],
           description:
-            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,第二次重构改用了react框架',
+            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能, 第一次用vue开发, 第二次重构改用了react框架',
           devtool: 'ReactJS(hooks) Antd VueJS Element-UI',
           character:
             '1、充分发挥react组件化,受控组件的思维; 切合antd的组件设计, styled-component定制组件, 保持一致性. 2、多次重构，也得益于react的思维，组件分组调理清晰，理解这样的思维成本不大，且学习后能和先前代码组织保持一致。3、可读性：我负责的代码区域最大能力保证代码的易读 4、丰富的类型检查：我负责的区域类型检查比较严格',

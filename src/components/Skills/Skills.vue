@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <h1 class="title">Skills</h1>
+    <h1 class="title">技术</h1>
     <hr />
     <div class="diagrams">
       <div class="diagram">

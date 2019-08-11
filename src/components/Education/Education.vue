@@ -1,6 +1,6 @@
 <template>
   <div class="education">
-    <h1 class="title">Infos</h1>
+    <h1 class="title">个人信息</h1>
     <hr>
     <table class="table">
       <tr class="table-row">
@@ -10,8 +10,9 @@
         <td class="text">
           <p>
             <span class="time"></span>
-            Sorry, this info might not available at this time;
+            出于信息保护, 个人资料不在此开放
             <br>
+            Sorry, personal info might not be served at this time;
           </p>
         </td>
       </tr>
@@ -26,8 +27,9 @@
         <td class="text">
           <p>
             <span class="time"></span>
-            Sorry, this info might not available at this time;
+            出于信息保护, 个人资料不在此开放
             <br>
+            Sorry, personal info might not be served at this time;
           </p>
         </td>
       </tr>
