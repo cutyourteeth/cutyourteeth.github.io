@@ -68,12 +68,12 @@ export default {
   data() {
     return {
       handle: {
-        ReactJS: 78,
-        js: 82,
+        ReactJS: 81,
+        js: 83,
         ts: 80,
         css: 82,
         nestJS: 71,
-        vue: 70,
+        vue: 78,
         SQL: 60,
         typeORM: 70
       },

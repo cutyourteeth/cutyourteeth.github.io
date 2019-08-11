@@ -119,16 +119,16 @@ export default {
           code: '',
           photos: [
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
+              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrezgaauj20tj0j80t2.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
+              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrez2mk7j20tb0jc3yt.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
+              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vreylapgj20sx0px0u6.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
+              src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vrey7n0fj20so0pndgp.jpg'
             }
           ],
           description:
@@ -146,16 +146,13 @@ export default {
           code: '',
           photos: [
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue1.jpg'
+              src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vrgmnwcpj20wp0jxab7.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue2.jpg'
+              src: '//wx1.sinaimg.cn/large/467fdbd3ly1g5vrgm3hbnj20wk0kc3zn.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue3.jpg'
-            },
-            {
-              src: '/aboutme/static/images/screenshots/worklog_pc_vue4.jpg'
+              src: '//wx4.sinaimg.cn/large/467fdbd3ly1g5vrglljh0j20wq0kc754.jpg'
             }
           ],
           description:

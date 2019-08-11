@@ -99,10 +99,6 @@ export default {
     border-radius: 5px;
 
     &>img {
-      max-width: 337px;
-      max-height: 668px;
-      width: 80vw;
-      height: 80vh;
     }
   }
 }
