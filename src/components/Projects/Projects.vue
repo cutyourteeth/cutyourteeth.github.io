@@ -33,15 +33,15 @@
       </div>
       <p class="clicktoView">点击查看图片</p>
       <p class="description">
-        <span class="pink">项目简介：</span>
+        <span class="pink">{{item.description?'项目简介:':''}}</span>
         {{item.description}}
-        <span class="pink">开发工具：</span>
+        <span class="pink">{{item.devtool?'开发工具：':''}}</span>
         {{item.devtool}}
-        <span class="pink">项目特色：</span>
+        <span class="pink">{{item.character?'项目特色：':''}}</span>
         {{item.character}}
-        <span class="pink">项目优势：</span>
+        <span class="pink">{{item.advance?'项目优势：':''}}</span>
         {{item.advance}}
-        <span class="pink">项目展望：</span>
+        <span class="pink">{{item.future?'项目展望：':''}}</span>
         {{item.future}}
       </p>
       <p class="danger">{{item.caution}}</p>
@@ -115,8 +115,8 @@ export default {
       items: [
         {
           title: '企业架构管理日志应用(小程序)',
-          view: '',
-          code: '',
+          view: '(暂不提供)',
+          code: '(暂不提供)',
           photos: [
             {
               src: '//wx1.sinaimg.cn/mw690/467fdbd3ly1g5vs0scd3ej20cn0nemxc.jpg'
@@ -138,15 +138,15 @@ export default {
             '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,该小程序属钉钉小程序平台,和微信小程序开发大同小异 ',
           devtool: 'miniprogram-devtools',
           character:
-            '为了达到产品要求我用了很多方法绕过和很多钉钉开发平台的坑, 打个比方, 底部的tabbar是自写的组件,因为当时开发时,官方框架的底栏作为spa的导航栏体验非常差,不能自定义开关,样式等等.  我很乐意开放这部分的知识库内容,访问:https://github.com/dimshades/handnote/blob/master/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.%E5%B0%8F%E7%A8%8B%E5%BA%8F.md ',
+            '为了达到产品要求我用了很多方法绕过和很多钉钉开发平台的坑, 打个比方, 底部的tabbar是自写的组件,因为当时开发时,官方框架的底栏作为spa的导航栏体验非常差,不能自定义开关,样式等等.  我很乐意开放这部分的知识库内容,访问:  https://github.com/dimshades/handnote/blob/master/笔记/笔记.小程序.md',
           advance: '',
           future: '',
           caution: ''
         },
         {
-          title: '企业架构管理日志应用PC端(Vue版本)',
-          view: '',
-          code: '',
+          title: '企业架构管理日志应用PC端(Vue版本/React版本)',
+          view: '(暂不提供)',
+          code: '(暂不提供)',
           photos: [
             {
               src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrezgaauj20tj0j80t2.jpg'
@@ -159,22 +159,7 @@ export default {
             },
             {
               src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vrey7n0fj20so0pndgp.jpg'
-            }
-          ],
-          description:
-            '企业管理软件, 包括企业组织架构管理,日志汇报,通知消息等等丰富功能,第二次重构改用了react框架',
-          devtool: 'ReactJS(hooks) Antd VueJS Element-UI',
-          character:
-            '1、充分发挥react组件化,受控组件的思维; 切合antd的组件设计, styled-component定制组件, 保持一致性. 2、多次重构，也得益于react的思维，组件分组调理清晰，理解这样的思维成本不大，且学习后能和先前代码组织保持一致。3、可读性：我负责的代码区域最大能力保证代码的易读 4、丰富的类型检查：我负责的区域类型检查比较严格',
-          advance: '日志汇报可以单独成为一个富文本记录app',
-          future: '独立出日志app,自己可以制作一个多端的应用',
-          caution: ''
-        },
-        {
-          title: '企业架构管理日志应用PC端(React版本)',
-          view: '',
-          code: '',
-          photos: [
+            },
             {
               src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vrgmnwcpj20wp0jxab7.jpg'
             },
@@ -194,26 +179,25 @@ export default {
           future: '独立出日志app,自己可以制作一个多端的应用',
           caution: ''
         },
-
         {
           title: '企业日志PC服务端(nestjs)',
-          view: '',
-          code: '',
+          view: '(暂不提供)',
+          code: '(暂不提供)',
           photos: [
             {
-              src: '/aboutme/static/images/screenshots/nest1.jpg'
+              src: '//wx4.sinaimg.cn/large/467fdbd3ly1g5vrf1e3w3j216f0rxwl8.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/nest2.jpg'
+              src: '//wx4.sinaimg.cn/large/467fdbd3ly1g5vrf0goqej20le0o5tai.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/nest3.jpg'
+              src: '//wx2.sinaimg.cn/large/467fdbd3ly1g5vrf02fjoj218g0p0q7d.jpg'
             },
             {
-              src: '/aboutme/static/images/screenshots/nest4.jpg'
+              src: '//wx3.sinaimg.cn/large/467fdbd3ly1g5vtcsjtzuj20sm0jv3zq.jpg'
             }
           ],
-          description: '',
+          description: 'nestjs',
           devtool: 'NestJS MySQL',
           character: '',
           advance: '',
