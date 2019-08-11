@@ -152,10 +152,13 @@ export default {
               src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vrezgaauj20tj0j80t2.jpg'
             },
             {
-              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vrez2mk7j20tb0jc3yt.jpg'
+              src: 'http://wx4.sinaimg.cn/large/467fdbd3ly1g5w2ul4r8yj20q50puaau.jpg'
             },
             {
-              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5vreylapgj20sx0px0u6.jpg'
+              src: 'http://wx2.sinaimg.cn/large/467fdbd3ly1g5w2um07zaj20pk0poq3i.jpg'
+            },
+            {
+              src: 'http://wx3.sinaimg.cn/large/467fdbd3ly1g5w2ullmlcj20pa0psdgy.jpg'
             },
             {
               src: 'http://wx3.sinaimg.cn/large/467fdbd3ly1g5vrey7n0fj20so0pndgp.jpg'

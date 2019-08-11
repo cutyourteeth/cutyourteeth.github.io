@@ -79,7 +79,7 @@ export default {
     margin: 0 auto 20px auto;
     width: 100px;
     height: 100px;
-    background-image: url('/aboutme/static/images/image/avatar.png');
+    background-image: url('http://wx4.sinaimg.cn/large/467fdbd3ly1g5w2u090lcj209x08yq7z.jpg');
     background-size: 130px;
     background-position: center;
     border-radius: 50%;
